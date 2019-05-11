@@ -71,6 +71,13 @@ TEMPLATES = [
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
+# I added this to stop static file caching for development purposes.
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+    }
+}
+
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
