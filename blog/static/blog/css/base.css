@@ -4,3 +4,23 @@ footer {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 }
+
+#mainNav {
+  position: absolute;
+  border-bottom: 2px solid #e9ecef;
+  background-color: white;
+}
+
+#mainNav .navbar-brand {
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 13px;
+  color: #343a40;
+}
+
+#mainNav .nav-link {
+	text-transform: uppercase;
+}
