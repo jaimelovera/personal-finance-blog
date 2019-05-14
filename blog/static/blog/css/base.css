@@ -7,7 +7,7 @@ footer {
 
 #mainNav {
   position: absolute;
-  border-bottom: 2px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
   background-color: white;
 }
 
@@ -15,12 +15,26 @@ footer {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 12px;
-  font-weight: 800;
-  padding: 13px;
-  color: #343a40;
+  font-size: 2rem;
+  color: black;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
 }
 
 #mainNav .nav-link {
 	text-transform: uppercase;
+}
+
+#main-section {
+	margin-top: 75px;
+}
+
+@media (min-width: 768px) {
+	#mainNav {
+  		position: fixed;
+  	}
+  	#main-section {
+  		margin-top: 0rem;
+  	}
 }
