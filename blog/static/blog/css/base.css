@@ -7,8 +7,8 @@ footer {
 
 #mainNav {
   position: absolute;
-  border-bottom: 1px solid #e9ecef;
-  background-color: white;
+  border-bottom: 1px solid #EBEBEB;
+  background-color: #F5F5F5;
 }
 
 #mainNav .navbar-brand {
@@ -16,14 +16,32 @@ footer {
 
 #mainNav .navbar-toggler {
   font-size: 2rem;
-  color: black;
-  padding: 1.2rem;
+  padding: 0.2rem;
   border: none;
   outline: none;
 }
 
+.navbar-toggler>.close {
+    display:inline;
+    font-size: 2.5rem;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
+.navbar-toggler:hover {
+	background-color: #EBEBEB;
+}
+
 #mainNav .nav-link {
 	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.navbar-nav > .nav-item{
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 #main-section {
@@ -34,6 +52,13 @@ footer {
 	#mainNav {
   		position: fixed;
   	}
+  	.navbar-nav > .nav-item{
+    	margin-top: 0rem;
+    	margin-bottom: 0rem;
+	}
+	#mainNav .nav-link {
+		font-size: 1.1rem;
+	}
   	#main-section {
   		margin-top: 0rem;
   	}
