@@ -8,7 +8,7 @@ footer {
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #EBEBEB;
-  background-color: #F5F5F5;
+  background-color: white;
 }
 
 #mainNav .navbar-brand {
@@ -16,7 +16,7 @@ footer {
 
 #mainNav .navbar-toggler {
   font-size: 2rem;
-  padding: 0.2rem;
+  padding: 0.1rem;
   border: none;
   outline: none;
 }
@@ -45,7 +45,7 @@ footer {
 }
 
 #main-section {
-	margin-top: 65px;
+	margin-top: 45px;
 }
 
 @media (min-width: 768px) {
