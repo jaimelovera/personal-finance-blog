@@ -48,6 +48,18 @@ footer {
 	margin-top: 45px;
 }
 
+.social {
+	font-size: 0.9rem;
+}
+
+.social a {
+	color: #3E3E3E;
+}
+
+.social a:hover {
+	color: #6E6E6E;
+}
+
 @media (min-width: 768px) {
 	#mainNav {
   		position: fixed;
