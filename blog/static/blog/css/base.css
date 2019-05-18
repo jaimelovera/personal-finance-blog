@@ -48,9 +48,10 @@ footer {
 }
 
 #mainNav .nav-link {
+	font-family: 'Nunito', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 
 .navbar-nav > .nav-item{
@@ -59,7 +60,7 @@ footer {
 }
 
 #main-section {
-	margin-top: 45px;
+	margin-top: 50px;
 }
 
 #footer-links {
@@ -95,10 +96,10 @@ footer {
     	margin-bottom: 0rem;
 	}
 	#mainNav .nav-link {
-		font-size: 1.1rem;
+		font-size: 1.05rem;
 	}
   	#main-section {
-  		margin-top: 0rem;
+  		margin-top: 30px;
   	}
   	#footer-disclaimer {
 		padding-top: 0rem;
