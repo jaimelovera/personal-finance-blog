@@ -49,8 +49,13 @@ footer {
 
 #mainNav .nav-link {
 	font-family: 'Nunito', sans-serif;
+	color: black;
 	text-align: center;
 	font-size: 1.2rem;
+}
+
+#mainNav .nav-link:hover {
+	color: #47A600;
 }
 
 .navbar-nav > .nav-item{
