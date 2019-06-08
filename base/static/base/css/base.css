@@ -91,6 +91,13 @@ footer {
 	color: #959595;
 }
 
+
+
+
+
+
+@media (min-width: 576px) {    }
+
 @media (min-width: 768px) {
 	#mainNav {
   		position: fixed;
@@ -108,4 +115,12 @@ footer {
   	#footer-disclaimer {
 		padding-top: 0rem;
 	}
-}
+} 
+
+@media (min-width: 992px) {    } 
+
+@media (min-width: 1200px) {    } 
+
+@media (min-width: 1400px) {    } 
+
+@media (min-width: 1600px) {    } 
