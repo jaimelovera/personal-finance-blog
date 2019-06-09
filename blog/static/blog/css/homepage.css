@@ -1,17 +1,12 @@
 .main-block {
 	background-color: #1BE300;
-	color:black;
-	font-size:4em;
+	color: #000000;
+	font-size: 4em;
 }
 
 .main-block a:hover{
 	text-decoration: none;
-	color:inherit;
-}
-
-.main-block span:hover{
-	text-decoration: none;
-	color:red;
+	color: inherit;
 }
 
 .second-block {
