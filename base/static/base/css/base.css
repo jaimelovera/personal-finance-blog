@@ -1,5 +1,6 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 10px; /* my base font size, my entire site is designed to scale to this value */
 }
 
 a {
@@ -29,7 +30,7 @@ footer {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 2rem;
+  font-size: 3em;
   padding: 0.1rem;
   border: none;
   outline: none;
@@ -37,7 +38,7 @@ footer {
 
 .navbar-toggler>.close {
     display:inline;
-    font-size: 2.5rem;
+    font-size: 1.4em;
 }
 .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
     display:none;
@@ -48,10 +49,10 @@ footer {
 }
 
 #mainNav .nav-link {
+	font-size: 2em;
 	font-family: 'Nunito', sans-serif;
 	color: black;
 	text-align: center;
-	font-size: 1.2rem;
 }
 
 #mainNav .nav-link:hover {
@@ -68,28 +69,34 @@ footer {
 }
 
 #footer-links {
-	font-size: 0.95rem;
+	font-size: 1.5em;
 }
 
 #footer-disclaimer {
-	font-size: 0.65rem;
+	font-size: 1em;
+	padding-top: 4rem;
 	font-style: italic;
 	color: #959595;
-	padding-top: 4rem;
 }
 
 #footer-logo {
-
+	/* my footers logo style goes here once I actually design it.. */
+	font-size: 1.5em;
 }
 
 #footer-copyright {
-	font-size: 0.75rem;
+	font-size: 1.25em;
 }
 
 #footer-disclaimer-links {
-	font-size: 0.5rem;
+	font-size: .75em;
 	color: #959595;
 }
+
+.media-icons {
+	font-size: 1.65em;
+}
+
 
 
 
@@ -103,14 +110,14 @@ footer {
   		position: fixed;
   	}
   	.navbar-nav > .nav-item{
-    	margin-top: 0rem;
-    	margin-bottom: 0rem;
+    	padding-top: 0.3rem;
+    	padding-bottom: 0.3rem;
 	}
 	#mainNav .nav-link {
-		font-size: 1.05rem;
+		font-size: 1.5em;
 	}
   	#main-section {
-  		margin-top: 33px;
+  		margin-top: 63px;
   	}
   	#footer-disclaimer {
 		padding-top: 0rem;

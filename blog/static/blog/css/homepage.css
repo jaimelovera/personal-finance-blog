@@ -1,9 +1,15 @@
 .main-block {
 	background-color: #1BE300;
+	min-height:35em;
 }
 
 .second-block {
 
+}
+
+.featured-title h1{
+	text-align: center;
+	font-size: 2em;
 }
 
 .box {
@@ -16,13 +22,38 @@
 	margin-right: 0.1rem;
 }
 .box-image{
+	height: 196px;
 	border-radius: 5px 5px 0px 0px;
 }
 .box-content{
 	text-align: center;
 	background-color: #E5E5E5;
+	border-radius: 0px 0px 5px 5px;
+	padding-top: 0.5rem;
+	padding-bottom: 0.1rem;
+}
+.box-content h4{
+	font-size: 1.2em;
+	font-weight:0;
+	color: #959595;
+}
+.box-content p{
+	font-size: 1.75em;
+	color: #525252;
 }
 .box:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-  filter: saturate(130%);
+ 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+ 	filter: saturate(130%);
 }
+.box:hover > .box-content h4 { 
+	color: #6D6D6D; 
+}
+.box:hover > .box-content p { 
+	color: #000000; 
+}
+
+.annotation p {
+	text-align: left;
+	color: #959595;
+}
+
