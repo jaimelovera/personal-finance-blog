@@ -1,5 +1,6 @@
 .main-block {
 	background-color: #1BE300;
+	padding-top:0.5rem;
 }
 
 .main-block a:hover{
@@ -10,15 +11,21 @@
 .main-block-text {
 	flex-direction: column;
 	color: #000000;
-	font-family: 'Nunito', sans-serif;
 }
 
 .main-block-text h1 {
-	font-size: 3em;
+	font-size: 2.9em;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 .main-block-text p {
 	font-size: 1.5em;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#main-block-image {
+	width:150%;
+	margin-bottom:1rem;
 }
 
 .second-block {
@@ -28,6 +35,7 @@
 .featured-title h1{
 	text-align: center;
 	font-size: 2em;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .box {
@@ -40,7 +48,6 @@
 	margin-right: 0.1rem;
 }
 .box-image{
-	height: 196px;
 	border-radius: 5px 5px 0px 0px;
 }
 .box-content{
@@ -49,11 +56,6 @@
 	border-radius: 0px 0px 5px 5px;
 	padding-top: 0.5rem;
 	padding-bottom: 0.1rem;
-}
-.box-content h4{
-	font-size: 1.2em;
-	font-weight:0;
-	color: #959595;
 }
 .box-content p{
 	font-size: 1.75em;
@@ -77,9 +79,6 @@
 
 
 
-
-
-
 @media (min-width: 576px) {    }
 
 @media (min-width: 768px) {    
@@ -92,7 +91,11 @@
 	}
 } 
 
-@media (min-width: 992px) {    } 
+@media (min-width: 992px) {
+	.main-block {
+		padding-top:3.5rem;
+	}
+} 
 
 @media (min-width: 1200px) {    } 
 
