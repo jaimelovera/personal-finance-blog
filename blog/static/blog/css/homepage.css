@@ -14,11 +14,11 @@
 }
 
 .main-block-text h1 {
-	font-size: 3.5em;
+	font-size: 3em;
 }
 
 .main-block-text p {
-	font-size: 1.6em;
+	font-size: 1.5em;
 }
 
 .second-block {
@@ -74,4 +74,29 @@
 	text-align: left;
 	color: #959595;
 }
+
+
+
+
+
+
+@media (min-width: 576px) {    }
+
+@media (min-width: 768px) {    
+	.main-block-text h1 {
+		font-size: 3.5em;
+	}
+
+	.main-block-text p {
+		font-size: 1.6em;
+	}
+} 
+
+@media (min-width: 992px) {    } 
+
+@media (min-width: 1200px) {    } 
+
+@media (min-width: 1400px) {    } 
+
+@media (min-width: 1600px) {    } 
 
