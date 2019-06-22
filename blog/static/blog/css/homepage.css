@@ -1,12 +1,24 @@
 .main-block {
 	background-color: #1BE300;
-	color: #000000;
-	font-size: 4em;
 }
 
 .main-block a:hover{
 	text-decoration: none;
 	color: inherit;
+}
+
+.main-block-text {
+	flex-direction: column;
+	color: #000000;
+	font-family: 'Nunito', sans-serif;
+}
+
+.main-block-text h1 {
+	font-size: 3.5em;
+}
+
+.main-block-text p {
+	font-size: 1.6em;
 }
 
 .second-block {
