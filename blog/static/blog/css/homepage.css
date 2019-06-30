@@ -3,29 +3,32 @@
 	padding-top:0.5rem;
 }
 
-.main-block a:hover{
+.main-block a:hover h1 span{
 	text-decoration: none;
 	color: inherit;
+	border-bottom: 1px solid #2E2E2E;
 }
 
 .main-block-text {
 	flex-direction: column;
+	text-align: center;
 	color: #000000;
 }
 
 .main-block-text h1 {
-	font-size: 2.9em;
+	font-size: 2.195em;
+	color: #2E2E2E;
 	font-family: 'Merriweather Sans', sans-serif;
 }
 
 .main-block-text p {
-	font-size: 1.5em;
+	font-size: 1.3em;
+	color: #000000;
 	font-family: 'Quicksand', sans-serif;
 }
 
 #main-block-image {
-	width:150%;
-	margin-bottom:1rem;
+	width:100%;
 }
 
 .second-block {
@@ -57,6 +60,10 @@
 	padding-top: 0.5rem;
 	padding-bottom: 0.1rem;
 }
+.box-content h1{ /*TO-DO:change format of this*/
+	font-size: 1em;
+	color: black;
+}
 .box-content p{
 	font-size: 1.75em;
 	color: #525252;
@@ -83,11 +90,10 @@
 
 @media (min-width: 768px) {    
 	.main-block-text h1 {
-		font-size: 3.5em;
+		font-size: 3.4em;
 	}
-
 	.main-block-text p {
-		font-size: 1.6em;
+		font-size: 1.5em;
 	}
 } 
 
@@ -95,9 +101,19 @@
 	.main-block {
 		padding-top:3.5rem;
 	}
+	.main-block-text {
+		text-align: left;
+	}
 } 
 
-@media (min-width: 1200px) {    } 
+@media (min-width: 1200px) {
+	.main-block-text h1 {
+		font-size: 3.8em;
+	}
+	.main-block-text p {
+		font-size: 1.6em;
+	}
+} 
 
 @media (min-width: 1400px) {    } 
 
