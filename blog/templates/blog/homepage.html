@@ -3,6 +3,7 @@
 {% block title %}GetMoneyStayBummy{% endblock %}
 {% block extra_head %}
 	<link rel="stylesheet" href="{% static 'blog/css/homepage.css' %}">
+	<link rel="stylesheet" href="{% static 'base/css/posts_list.css' %}">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
 {% endblock %}
@@ -11,7 +12,7 @@
 {% block content %}
 <div class= "main-block">
 	<div class="container">
-		<a href="http://www.jaimelovera.com">
+		<a href="#">
 			<div class="row no-gutters px-5">
 				<div class="col-lg-6 d-flex align-items-center justify-content-center pt-5 pb-3 main-block-text">
 					<h1><span>It Doesnt Matter How Much Money You Make If You Give It All Away</span></h1>
@@ -25,73 +26,13 @@
 	</div>
 </div>
 
-
-<div class= "second-block">
-
-	<div class="pt-4 featured-title">
-		<h1>Featured Articles</h1>
-	</div>
-
-	<div class="container pb-5">
-		<div class="row">
-			<div class="col-6 col-md-4">
-				<div class="box">
-					<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-					<div class="box-content">
-						<h1>GetMoney/StayBummy</h1>
-						<p>Post content summary</p> 
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-4">
-				<div class="box">
-					<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-					<div class="box-content">
-						<h1>GetMoney/StayBummy</h1>
-						<p>Post content summary</p> 
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-4">
-				<div class="box">
-					<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-					<div class="box-content">
-						<h1>GetMoney/StayBummy</h1>
-						<p>Post content summary</p> 
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-4">
-				<div class="box">
-					<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-					<div class="box-content">
-						<h1>GetMoney/StayBummy</h1>
-						<p>Post content summary</p> 
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-4">
-				<div class="box">
-					<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-					<div class="box-content">
-						<h1>GetMoney/StayBummy</h1>
-						<p>Post content summary</p> 
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-4">
-				<div class="box">
-					<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-					<div class="box-content">
-						<h1>GetMoney/StayBummy</h1>
-						<p>Post content summary</p> 
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--TO-DO: add view all posts link---------------------------------------------------------------------------->
-	</div>
+<div class="pt-4 featured-title">
+	<h1>Featured</h1>
 </div>
+{% include 'base/posts_list.html' %}
+
+
+
 {% endblock %}
 
 
