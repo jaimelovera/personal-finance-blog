@@ -27,6 +27,27 @@ footer {
 }
 
 #mainNav .navbar-brand {
+	
+}
+
+#mainNav .navbar-toggler {
+  font-size: 3em;
+  padding: 0.1rem;
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler>.close {
+    display:inline;
+    font-size: 1.4em;
+}
+
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
+.navbar-toggler:hover {
+	background-color: #EBEBEB;
 }
 
 #mainNav .nav-link {
