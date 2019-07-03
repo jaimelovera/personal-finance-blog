@@ -21,13 +21,18 @@ footer {
 }
 
 #mainNav {
-  position: absolute;
+  position: fixed;
   border-bottom: 1px solid #EBEBEB;
   background-color: white;
 }
 
+.navbar-nav {
+	padding-top:10%;
+	padding-bottom:100%;
+}
+
 #mainNav .navbar-brand {
-	
+
 }
 
 #mainNav .navbar-toggler {
@@ -51,7 +56,7 @@ footer {
 }
 
 #mainNav .nav-link {
-	font-size: 1.9em;
+	font-size: 3em;
 	font-family: 'Nunito', sans-serif;
 	color: black;
 	text-align: center;
@@ -62,12 +67,12 @@ footer {
 }
 
 .navbar-nav > .nav-item{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #main-section {
-	margin-top: 52px;
+	margin-top: 39px;
 }
 
 #footer-links {
@@ -102,7 +107,19 @@ footer {
 
 @media (min-width: 576px) {    }
 
-@media (min-width: 768px) {    } 
+@media (min-width: 768px) {
+	.navbar-nav {
+		padding-top:0;
+		padding-bottom:0;
+	}
+	.navbar-nav > .nav-item {
+    	padding-top: 0.15rem;
+    	padding-bottom: 0.15rem;
+	}
+	#mainNav .nav-link {
+		font-size: 1.7em;
+	}
+} 
 
 @media (min-width: 992px) {    } 
 

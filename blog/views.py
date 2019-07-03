@@ -6,10 +6,15 @@ def homepage(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/homepage.html', {'posts': posts})
 
-def getmoney(request):
+def frugality(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/getmoney.html', {'posts': posts})
+    return render(request, 'blog/frugality.html', {'posts': posts})
 
-def staybummy(request):
+def investing(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/staybummy.html', {'posts': posts})
+    return render(request, 'blog/investing.html', {'posts': posts})
+
+def creditcards(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/creditcards.html', {'posts': posts})
+
