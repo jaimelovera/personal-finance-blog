@@ -1,59 +1,19 @@
 {% load static %}
+{% load filename %}
 <div class="container pb-5">
 	<div class="row">
+
+		{% for post in posts %}
 		<div class="col-6 col-md-4">
 			<div class="box">
-				<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
+				<img class="box-image" src="{% static 'blog/img/' %}{{ post.image | getfilename }}" alt="Image" style="width:100%">
 				<div class="box-content">
-					<h1>GetMoney/StayBummy</h1>
-					<p>Post content summary</p> 
+					<h1>{{ post.get_category_display }}</h1>
+					<p>{{ post.title }}</p>
 				</div>
 			</div>
 		</div>
-		<div class="col-6 col-md-4">
-			<div class="box">
-				<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-				<div class="box-content">
-					<h1>GetMoney/StayBummy</h1>
-					<p>Post content summary</p> 
-				</div>
-			</div>
-		</div>
-		<div class="col-6 col-md-4">
-			<div class="box">
-				<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-				<div class="box-content">
-					<h1>GetMoney/StayBummy</h1>
-					<p>Post content summary</p> 
-				</div>
-			</div>
-		</div>
-		<div class="col-6 col-md-4">
-			<div class="box">
-				<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-				<div class="box-content">
-					<h1>GetMoney/StayBummy</h1>
-					<p>Post content summary</p> 
-				</div>
-			</div>
-		</div>
-		<div class="col-6 col-md-4">
-			<div class="box">
-				<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-				<div class="box-content">
-					<h1>GetMoney/StayBummy</h1>
-					<p>Post content summary</p> 
-				</div>
-			</div>
-		</div>
-		<div class="col-6 col-md-4">
-			<div class="box">
-				<img class="box-image" src="{% static 'blog/img/money.jpg' %}" alt="Image" style="width:100%">
-				<div class="box-content">
-					<h1>GetMoney/StayBummy</h1>
-					<p>Post content summary</p> 
-				</div>
-			</div>
-		</div>
+		{% endfor %}
+
 	</div>
 </div>

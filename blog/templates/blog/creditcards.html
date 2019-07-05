@@ -9,7 +9,19 @@
 
 
 {% block content %}
-<div class= "main-block">
+<div class= "main-block mb-4">
+	<div class="container">
+		<a href="#">
+			<div class="row no-gutters px-5">
+				<div class="col-lg-6 d-flex align-items-center justify-content-center pt-5 pb-3 main-block-text">
+					<h1>Credit Cards</h1>
+				</div>
+				<div class="col-lg-6 d-flex justify-content-center">
+					<img src="{% static 'blog/img/money.jpg' %}" alt="Image" id="main-block-image">
+				</div>
+			</div>
+		</a>
+	</div>
 </div>
 
 {% include 'base/posts_list.html' %}

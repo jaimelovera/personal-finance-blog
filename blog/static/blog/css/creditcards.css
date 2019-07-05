@@ -1,3 +1,51 @@
 .creditcards-active {
 	border-bottom: 1px solid #47A600;
 }
+
+.main-block {
+	background-color: #1BE300;
+	padding-top:0.5rem;
+}
+
+.main-block-text {
+	flex-direction: column;
+	text-align: center;
+	color: #000000;
+}
+
+.main-block-text h1 {
+	font-size: 2.195em;
+	font-family: 'Quicksand', sans-serif;
+	color: #2E2E2E;
+}
+
+#main-block-image {
+	width:95%;
+}
+
+@media (min-width: 576px) {    }
+
+@media (min-width: 768px) {    
+	.main-block-text h1 {
+		font-size: 3.4em;
+	}
+} 
+
+@media (min-width: 992px) {
+	.main-block {
+		padding-top:3.5rem;
+	}
+	.main-block-text {
+		text-align: left;
+	}
+} 
+
+@media (min-width: 1200px) {
+	.main-block-text h1 {
+		font-size: 3.8em;
+	}
+} 
+
+@media (min-width: 1400px) {    } 
+
+@media (min-width: 1600px) {    } 
