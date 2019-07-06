@@ -24,6 +24,15 @@
 .post-block {
 	text-align: center;
 }
+.post-block p {
+
+}
+.post-block h1 {
+
+}
+.post-block h2 {
+
+}
 
 
 @media (min-width: 576px) {    }
