@@ -16,6 +16,8 @@
 	border-radius: 0px 0px 5px 5px;
 	padding-top: 0.5rem;
 	padding-bottom: 0.1rem;
+	padding-left:1rem;
+	padding-right:1rem;
 }
 .box-content h1 {
 	font-size: 1em;
