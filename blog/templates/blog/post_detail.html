@@ -3,14 +3,29 @@
 {% block title %}GetMoneyStayBummy{% endblock %}
 {% block extra_head %}
 	<link rel="stylesheet" href="{% static 'blog/css/post_detail.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
 {% endblock %}
 
 
 {% block content %}
 <div class= "main-block">
-
+	<div class="container">
+		<div class="row px-5">
+			<div class="col-lg-6 my-auto pt-5 pb-2 main-block-text">
+				<h1>It Doesnt Matter How Much Money You Make If You Give It All Away</h1>
+				<p>Investing</p>
+			</div>
+			<div class="col-lg-6">
+				<img src="{% static 'blog/img/money.jpg' %}" alt="Image" id="main-block-image">
+			</div>
+		</div>
+	</div>
 </div>
 
+<div class= "post-block">
+	<p>post/article content will go here</p>
+</div>
 
 {% endblock %}
 

@@ -1,15 +1,61 @@
 .main-block {
-	
+	padding-top:0.5rem;
 }
+.main-block-text {
+	color: #000000;
+	text-align: center;
+}
+.main-block-text h1 {
+	font-size: 2.195em;
+	color: #2E2E2E;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+.main-block-text p {
+	font-size: 1.2em;
+	color: #000000;
+	font-family: 'Raleway', sans-serif;
+
+}
+#main-block-image {
+	width:100%;
+}
+
+
+.post-block {
+
+}
+
 
 @media (min-width: 576px) {    }
 
-@media (min-width: 768px) {    } 
+@media (min-width: 768px) {    
+	.main-block-text h1 {
+		font-size: 3.4em;
+	}
+	.main-block-text p {
+		font-size: 1.3em;
+	}
+} 
 
-@media (min-width: 992px) {    } 
+@media (min-width: 992px) {
+	.main-block {
+		padding-top:3.5rem;
+	}
+	.main-block-text {
+		text-align: left;
+	}
+} 
 
-@media (min-width: 1200px) {    } 
+@media (min-width: 1200px) {
+	.main-block-text h1 {
+		font-size: 3.8em;
+	}
+	.main-block-text p {
+		font-size: 1.4em;
+	}
+} 
 
 @media (min-width: 1400px) {    } 
 
 @media (min-width: 1600px) {    } 
+
