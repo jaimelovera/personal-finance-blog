@@ -11,7 +11,7 @@
 	font-family: 'Merriweather Sans', sans-serif;
 }
 .main-block-text p {
-	font-size: 1.2em;
+	font-size: 1em;
 	color: #000000;
 	font-family: 'Raleway', sans-serif;
 
@@ -20,33 +20,50 @@
 	width:100%;
 }
 
-
 .post-block {
-	text-align: center;
-}
-.post-block p {
 
 }
-.post-block h1 {
-
+.post-block .container-fluid {
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
-.post-block h2 {
-
+.post-block-text p {
+	font-size: 1.8em;
+}
+.post-block-text h1 {
+	font-size: 2.2em;
+	font-weight: 700;
+}
+.post-block-text h2 {
+	font-size: 1.8em;
 }
 
 
-@media (min-width: 576px) {    }
+@media (min-width: 576px) {
+	.post-block .container-fluid {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
 
 @media (min-width: 768px) {    
+	.post-block .container-fluid {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
 	.main-block-text h1 {
 		font-size: 3.4em;
 	}
 	.main-block-text p {
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 } 
 
 @media (min-width: 992px) {
+	.post-block .container-fluid {
+		padding-left: 10rem;
+		padding-right: 10rem;
+	}
 	.main-block {
 		padding-top:3.5rem;
 	}
@@ -56,15 +73,30 @@
 } 
 
 @media (min-width: 1200px) {
+	.post-block .container-fluid {
+		padding-left: 14rem;
+		padding-right: 14rem;
+	}
 	.main-block-text h1 {
 		font-size: 3.8em;
 	}
 	.main-block-text p {
-		font-size: 1.4em;
+		font-size: 1.3em;
 	}
 } 
 
-@media (min-width: 1400px) {    } 
+@media (min-width: 1400px) {
+	.post-block .container-fluid {
+		padding-left: 18rem;
+		padding-right: 18rem;
+	}
 
-@media (min-width: 1600px) {    } 
+} 
+
+@media (min-width: 1600px) {
+	.post-block .container-fluid {
+		padding-left: 22rem;
+		padding-right: 22rem;
+	}
+} 
 

@@ -6,9 +6,9 @@ import os
 
 class Post(models.Model):
     categories = (
-        ('FRUGALITY', 'Frugality'),
-        ('INVESTING', 'Investing'),
-        ('CREDIT_CARDS', 'Credit Cards'),
+        ('FRUGALITY', 'FRUGALITY'),
+        ('INVESTING', 'INVESTING'),
+        ('CREDIT_CARDS', 'CREDIT CARDS'),
     )
     featured = (
         ('YES', 'Yes'),
