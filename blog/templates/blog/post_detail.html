@@ -24,7 +24,7 @@
 </div>
 
 <div class= "post-block">
-	<p>post/article content will go here</p>
+	{{ post.body_html | safe }}
 </div>
 
 {% endblock %}

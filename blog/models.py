@@ -15,16 +15,12 @@ class Post(models.Model):
         ('NO', 'No'),
     )
 
-    category = models.CharField(max_length=20, choices=categories)
     is_featured = models.CharField(max_length=3, choices=featured, default='NO')
-    image= models.ImageField(upload_to="blog/static/blog/img", help_text="Image must be 1200 x 800")
+    category = models.CharField(max_length=20, choices=categories)
+    image= models.ImageField(upload_to="blog/static/blog/img", help_text="This is required and image must be 1200 x 800")
     title = models.CharField(max_length=200)
-    body = models.TextField()
-    published_date = models.DateTimeField(default=timezone.now)
-
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
+    body_html = models.TextField(verbose_name="body (HTML)")
+    published_date = models.DateTimeField(default=None,blank=True, null=True)
 
     def __str__(self):
         return self.title
