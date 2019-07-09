@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}GetMoneyStayBummy{% endblock %}
+{% block extra_head %}
+	<link rel="stylesheet" href="{% static 'blog/css/404.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+<div class= "main-block">
+	<div class="container">
+		<div class="row">
+			<div class="col main-block-text">
+				<h1>404</h1>
+				<p>Page Not Found</p>
+				<a class="btn" href="#">Return To Homepage</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+{% block javascript %}
+{% endblock %}
