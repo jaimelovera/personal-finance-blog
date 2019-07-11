@@ -1,0 +1,39 @@
+.main-block {
+	background-color: #1BE300;
+	padding-top:12rem;
+	padding-bottom: 15rem;
+}
+
+
+
+.emaillist {
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+#mc_embed_signup {
+	background: #1BE300; 
+	clear:left; 
+	width:100%;
+}
+#mc_embed_signup .button {
+	color: white !important;
+	background-color: #2A2A2A !important;
+}
+
+
+
+@media (min-width: 576px) {    }
+
+@media (min-width: 768px) {    } 
+
+@media (min-width: 992px) {    } 
+
+@media (min-width: 1200px) {    } 
+
+@media (min-width: 1400px) {    } 
+
+@media (min-width: 1600px) {    } 
+

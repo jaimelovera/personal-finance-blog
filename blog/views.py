@@ -6,6 +6,12 @@ from django.shortcuts import get_object_or_404
 def not_found_404(request, exception):
     return render(request, 'blog/404.html', status=404)
 
+def subscribe(request):
+    return render(request, 'blog/subscribe.html')
+
+def subscribe_thank_you(request):
+    return render(request, 'blog/subscribe-thank-you.html')
+
 def homepage(request):
     posts = Post.objects.filter(is_featured='YES').exclude(published_date=None).order_by('-published_date')
     return render(request, 'blog/homepage.html', {'posts': posts})

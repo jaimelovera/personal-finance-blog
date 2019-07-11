@@ -16,7 +16,7 @@
 }
 
 .main-block-text h1 {
-	font-size: 2.195em;
+	font-size: 2.6em;
 	color: #2E2E2E;
 	font-family: 'Merriweather Sans', sans-serif;
 }
@@ -31,11 +31,34 @@
 	width:95%;
 }
 
+
+
+.emaillist {
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+#mc_embed_signup {
+	background:#fff; 
+	clear:left; 
+	width:100%;
+}
+#mc_embed_signup .button {
+	color: #2E2E2E !important;
+	background-color: #5FCA10 !important;
+}
+
+
+
 .featured-title h1{
 	text-align: center;
 	font-size: 2em;
 	font-family: 'Quicksand', sans-serif;
 }
+
+
 
 @media (min-width: 576px) {    }
 

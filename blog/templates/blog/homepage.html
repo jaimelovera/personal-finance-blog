@@ -16,7 +16,7 @@
 			<div class="row px-5">
 				<div class="col-lg-6 d-flex align-items-center justify-content-center pt-5 pb-2 main-block-text">
 					<h1><span>It Doesnt Matter How Much Money You Make If You Give It All Away</span></h1>
-					<p>My mission with this blog is to encourage people to focus on building net worth</p>
+					<p>The mission is to encourage people to focus on building net worth</p>
 				</div>
 				<div class="col-lg-6 d-flex justify-content-center">
 					<img src="{% static 'blog/img/money.jpg' %}" alt="Image" id="main-block-image">
@@ -29,8 +29,27 @@
 <div class="pt-3 featured-title">
 	<h1>Featured Articles</h1>
 </div>
+
+
 {% include 'base/posts_list.html' %}
 
+
+<div class="emaillist">
+	<!-- Begin Mailchimp Signup Form -->
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<div id="mc_embed_signup">
+	<form action="https://getmoneystaybummy.us3.list-manage.com/subscribe/post?u=5ae1d7620c850810b683c6932&amp;id=2626791cd1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	    <div id="mc_embed_signup_scroll">
+		<label for="mce-EMAIL">Join our mailing list for news, updates, and more</label>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+	    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5ae1d7620c850810b683c6932_2626791cd1" tabindex="-1" value=""></div>
+	    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	    </div>
+	</form>
+	</div>
+	<!--End mc_embed_signup-->
+</div>
 
 
 {% endblock %}
