@@ -12,6 +12,9 @@ def subscribe(request):
 def subscribe_thank_you(request):
     return render(request, 'blog/subscribe_thank_you.html')
 
+def legal(request):
+    return render(request, 'blog/legal.html')
+
 def homepage(request):
     posts = Post.objects.filter(is_featured='YES').exclude(published_date=None).order_by('-published_date')
     return render(request, 'blog/homepage.html', {'posts': posts})
