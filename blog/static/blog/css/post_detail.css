@@ -23,7 +23,14 @@
 
 .post-block {
 	padding-bottom: 8rem;
-
+}
+.post-block img {
+	width: 80%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 .post-block .container-fluid {
 	padding-left: 1rem;
@@ -64,6 +71,9 @@
 	}
 	.main-block-text p {
 		font-size: 1.4em;
+	}
+	.post-block img {
+		width: 65%;
 	}
 } 
 @media (min-width: 992px) {

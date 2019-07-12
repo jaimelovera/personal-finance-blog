@@ -6,7 +6,7 @@
 		<div class="col-6 col-md-4">
 			<a href="{% url 'post_detail' pk=post.pk %}">
 				<div class="box">
-					<img class="box-image" src="{% static 'blog/img/' %}{{ post.image | getfilename }}" alt="Image" style="width:100%">
+					<img class="box-image" src="{% static 'blog/img/' %}{{ post.main_image | getfilename }}" alt="Image" style="width:100%">
 					<div class="box-content">
 						<h1>{{ post.get_category_display }}</h1>
 						<p>{{ post.title }}</p>

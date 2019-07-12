@@ -10,7 +10,7 @@ def subscribe(request):
     return render(request, 'blog/subscribe.html')
 
 def subscribe_thank_you(request):
-    return render(request, 'blog/subscribe-thank-you.html')
+    return render(request, 'blog/subscribe_thank_you.html')
 
 def homepage(request):
     posts = Post.objects.filter(is_featured='YES').exclude(published_date=None).order_by('-published_date')
