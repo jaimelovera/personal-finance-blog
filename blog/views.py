@@ -9,6 +9,12 @@ def not_found_404(request, exception):
 def subscribe(request):
     return render(request, 'blog/subscribe.html')
 
+def contact(request):
+    return render(request, 'blog/contact.html')
+
+def about(request):
+    return render(request, 'blog/about.html')
+
 def subscribe_thank_you(request):
     return render(request, 'blog/subscribe_thank_you.html')
 
