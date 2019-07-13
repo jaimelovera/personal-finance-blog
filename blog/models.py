@@ -8,8 +8,11 @@ from django.core.exceptions import ValidationError
 def validate_image(image):
     file_height = image.height 
     file_width = image.width
-    if (file_width != 1200) or (file_height != 800):
-        raise ValidationError("Image must be 1200 x 800")
+    if file_width/file_height != 3/2:
+        raise ValidationError("Image aspect ratio must be exactly 3:2")
+
+    #if (file_width != 1200) or (file_height != 800):
+        #raise ValidationError("Image must be 1200 x 800")
 
 class Post(models.Model):
     categories = (
