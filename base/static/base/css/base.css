@@ -3,13 +3,6 @@ body {
 	font-size: 10px; /* my base font size, my entire site is designed to scale to this value */
 }
 
-html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
-}
-
 a {
 	color: inherit;
 	text-decoration: none

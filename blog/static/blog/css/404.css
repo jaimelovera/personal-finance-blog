@@ -41,9 +41,9 @@
 
 
 
-@media (min-width: 576px) {    }
+@media screen and (min-width: 576px) {    }
 
-@media (min-width: 768px) {   
+@media screen and (min-width: 768px) {   
 	.main-block-text h1 {
 		font-size: 15em;
 	}
@@ -55,7 +55,7 @@
   	}
 } 
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
 	.main-block-text h1 {
 		font-size: 16em;
 	}
@@ -68,7 +68,7 @@
   	}
 } 
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	.main-block-text h1 {
 		font-size: 17em;
 	}
@@ -81,7 +81,7 @@
   	}
 } 
 
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
 	.main-block-text h1 {
 		font-size: 18em;
 	}
@@ -94,7 +94,7 @@
   	}
 } 
 
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
 	.main-block-text h1 {
 		font-size: 19em;
 	}
