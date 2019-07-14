@@ -46,6 +46,8 @@
 }
 .post-block-text h2 {
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	font-style: italic;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	padding-left: 5rem;
