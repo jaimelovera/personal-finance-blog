@@ -71,8 +71,16 @@ footer {
     padding-bottom: 1rem;
 }
 
+.logo-nav {
+	height: 2.5rem;
+}
+.logo-footer {
+	height: 2.25rem;
+	padding-bottom: 0.5rem;
+}
+
 #main-section {
-	margin-top: 39px;
+	margin-top: 56px;
 }
 
 #footer-links {
@@ -108,20 +116,34 @@ footer {
 @media screen and (min-width: 576px) {    }
 
 @media screen and (min-width: 768px) {
+	#main-section {
+		margin-top: 40px;
+	}
 	.navbar-nav {
 		padding-top:0;
 		padding-bottom:0;
 	}
 	.navbar-nav > .nav-item {
-    	padding-top: 0.15rem;
-    	padding-bottom: 0.15rem;
+    	padding-top: 0.35rem;
+    	padding-bottom: 0.35rem;
 	}
 	#mainNav .nav-link {
 		font-size: 1.7em;
 	}
+	.logo-nav {
+		height: 2rem;
+	}
+	.logo-footer {
+		height: 1rem;
+		padding-bottom: 0rem;
+	}
 } 
 
-@media screen and (min-width: 992px) {    } 
+@media screen and (min-width: 992px) {
+	.logo-footer {
+		height: 1.4rem;
+	}
+} 
 
 @media screen and (min-width: 1200px) {    } 
 
