@@ -37,6 +37,9 @@
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+.post-block-text a {
+	text-decoration: underline;
+}
 .post-block-text p {
 	font-size: 2em;
 }
