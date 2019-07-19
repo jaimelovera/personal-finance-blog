@@ -2,34 +2,34 @@
 {% load static %}
 {% block title %}Frugality | GetMoneyStayBummy{% endblock %}
 {% block extra_head %}
-	<link rel="stylesheet" href="{% static 'blog/css/frugality.css' %}">
+	<style>.frugality-active {border-bottom: 1px solid #47A600;}</style>
+	<link rel="stylesheet" href="{% static 'blog/css/category_page.css' %}">
 	<link rel="stylesheet" href="{% static 'base/css/posts_list.css' %}">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 {% endblock %}
 
-
 {% block content %}
-<div class= "main-block mb-4">
+
+<div class= "main-block">
 	<div class="container">
-		<a href="#">
 			<div class="row no-gutters px-5">
-				<div class="col-lg-6 d-flex align-items-center justify-content-center pt-5 pb-3 main-block-text">
+				<div class="col-lg-6 d-flex align-items-center justify-content-center pt-5 pb-2 main-block-text">
 					<h1>Frugality</h1>
 				</div>
 				<div class="col-lg-6 d-flex justify-content-center">
-					<img src="{% static 'blog/img/frugality.png' %}" alt="Image" id="main-block-image">
+					<img src="{% static 'blog/img/main/frugality.png' %}" alt="Image" id="main-block-image">
 				</div>
 			</div>
-		</a>
 	</div>
+</div>
+
+<div class="pt-3 articles-title">
+	<h1>Articles</h1>
 </div>
 
 {% include 'base/posts_list.html' %}
 
-
-
 {% endblock %}
-
 
 {% block javascript %}
 {% endblock %}
