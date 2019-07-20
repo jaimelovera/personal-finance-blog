@@ -19,7 +19,7 @@ def legal(request):
     return render(request, 'blog/legal.html')
 
 def homepage(request):
-    posts = Post.objects.filter(is_featured='YES').exclude(published_date=None).order_by('-published_date')
+    posts = Post.objects.filter(is_featured='YES').exclude(published_date=None).exclude(category='ABOUT_US').order_by('-published_date')
     return render(request, 'blog/homepage.html', {'posts': posts})
 
 def frugality(request):

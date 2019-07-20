@@ -1,16 +1,24 @@
 {% extends 'base/base.html' %}
 {% load static %}
-{% block title %}Subscribe | GetMoneyStayBummy{% endblock %}
+{% block title %}Subscribed, Thank You | GetMoneyStayBummy{% endblock %}
 {% block extra_head %}
 	<link rel="stylesheet" href="{% static 'blog/css/subscribe_thank_you.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 {% endblock %}
 
 
 {% block content %}
 
 <div class= "main-block">
-	<div class="subscribe-info-text text-center">
-		<h1>TO-DO: Make Subscribe Confirmation Thank You Page</h1>
+	<div class="container">
+			<div class="row no-gutters px-5">
+				<div class="col-lg-6 d-flex align-items-center justify-content-center pt-5 pb-2 main-block-text">
+					<p>Your subscription was successful.</br>Please check your inbox for a confirmation email.</p>
+				</div>
+				<div class="col-lg-6 d-flex justify-content-center">
+					<img src="{% static 'blog/img/main/subscribe-thank-you.png' %}" alt="Post It Note With Thank You Message" id="image-postit">
+				</div>
+			</div>
 	</div>
 </div>
 

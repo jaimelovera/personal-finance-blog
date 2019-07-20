@@ -1,3 +1,24 @@
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 32rem;    /* Footer height */
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 32rem;            /* Footer height */
+	background-color: #2A2A2A;
+	color: white;
+	padding-top: 5rem;
+	padding-bottom: 1.5rem;
+}
+/* These three above allow the footer to be at the bottom of the page if there is not enugh content to fill the page */
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 10px; /* my base font size, my entire site is designed to scale to this value */
@@ -13,12 +34,6 @@ a:hover {
 	text-decoration: none
 }
 
-footer {
-	background-color: #2A2A2A;
-	color: white;
-	padding-top: 4rem;
-	padding-bottom: 1.5rem;
-}
 
 #mainNav {
   position: fixed;
@@ -136,6 +151,14 @@ footer {
 	.logo-footer {
 		height: 1rem;
 		padding-bottom: 0rem;
+	}
+	#content-wrap {
+		padding-bottom: 24rem;    /* Footer height */
+	}
+	#footer {
+		height: 24rem;            /* Footer height */
+		padding-top: 5rem;
+		padding-bottom: 1.5rem;
 	}
 } 
 

@@ -10,6 +10,7 @@
 	font-family: 'Merriweather Sans', sans-serif;
 }
 .main-block-text p {
+	text-transform: uppercase;
 	font-size: 1.3em;
 	color: #000000;
 	font-family: 'Raleway', sans-serif;
