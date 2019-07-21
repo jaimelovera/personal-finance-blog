@@ -2,6 +2,8 @@
 	text-align: center;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+	font-family: 'Quicksand', sans-serif;
+	color: #2E2E2E;
 }
 
 #result-search-bar input {
@@ -10,6 +12,33 @@
 	outline: none;
 	border-bottom: 1px solid black;
 }
+
+.count-message p {
+	font-size: 1.5em;
+	padding-top: 0.5rem;
+}
+.count-message p span {
+	font-size: 0.9em;
+}
+
+
+
+#result-search-bar input:focus::-moz-placeholder {
+	font-family: 'Open Sans', sans-serif;
+	color: #8E8E8E;
+	font-size: 0.9em;
+}
+#result-search-bar input:focus::-webkit-input-placeholder {
+	font-family: 'Open Sans', sans-serif;
+	color: #8E8E8E;
+	font-size: 0.9em;
+}
+#result-search-bar input::-webkit-search-decoration,
+#result-search-bar input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
 
 @media screen and (min-width: 576px) {    }
 @media screen and (min-width: 768px) {

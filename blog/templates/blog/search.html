@@ -1,17 +1,21 @@
 {% extends 'base/base.html' %}
 {% load static %}
-{% block title %}Search Results | GetMoneyStayBummy{% endblock %}
+{% block title %}Search | GetMoneyStayBummy{% endblock %}
 {% block extra_head %}
 	<link rel="stylesheet" href="{% static 'blog/css/search.css' %}">
 	<link rel="stylesheet" href="{% static 'base/css/posts_list.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
 
 <div class= "main-block">
 	<form id ="result-search-bar" action="{% url 'search' %}" method="get">
-		<input name="query" type="search" autocomplete="off" value="{{ query }}" placeholder="Search articles...">
+		<input name="query" type="search" autocomplete="off" value="{{ query }}" placeholder="Search articles..." required>
 	</form>
+	<div class="count-message">
+		<p>We found {{ count }} result<span>(s)</span></p>
+	</div>
 </div>
 
 {% include 'base/posts_list.html' %}

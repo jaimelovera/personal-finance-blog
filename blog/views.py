@@ -16,12 +16,14 @@ def search(request):
     query = request.GET.get('query')
     if query:
         query_list = query.split()
-        posts=Post.objects.exclude(published_date=None).filter(reduce(operator.or_,(Q(title__icontains=q) for q in query_list)) | reduce(operator.or_,(Q(body_html__icontains=q) for q in query_list)))
-        return render(request, 'blog/search.html', {'query': query, 'posts': posts})
+        posts = Post.objects.exclude(published_date=None).filter(reduce(operator.or_,(Q(title__icontains=q) for q in query_list)) | reduce(operator.or_,(Q(body_html__icontains=q) for q in query_list)))
+        count = posts.count()
+        return render(request, 'blog/search.html', {'query': query, 'count': count, 'posts': posts})
     else:
-        posts=None
-        query=''
-        return render(request, 'blog/search.html', {'query': query, 'posts': posts})
+        posts = None
+        query = ''
+        count = posts.count()
+        return render(request, 'blog/search.html', {'query': query, 'count': count, 'posts': posts})
 
 def about(request):
     return render(request, 'blog/about.html')
