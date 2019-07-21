@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="{% static 'base/vendor/fontawesome-free-5.8.2/css/all.min.css' %}">
         <link rel="stylesheet" href="{% static 'base/vendor/bootstrap-4.3.1/css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'base/css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'base/css/search_bar.css' %}">
         {% block extra_head %}{% endblock %}
 
     </head>
@@ -38,9 +39,11 @@
 						<li class="nav-item">
 							<a class="nav-link py-0" href="{% url 'creditcards' %}"><span class="creditcards-active">Credit Cards</span></a>
 						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link py-0" href="/stories"><span class="stories-active">Stories</span></a>
-						</li> -->
+						<li class="nav-item mx-auto mx-md-0 ml-md-auto pb-0 search-bar">
+							<form action="{% url 'search' %}" method="get">
+								<input name="query" type="search" autocomplete="off" placeholder="Search articles...">
+							</form>
+						</li>
 					</ul>
 
 				</div>

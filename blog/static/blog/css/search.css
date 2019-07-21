@@ -1,0 +1,31 @@
+.main-block {
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+#result-search-bar input {
+	font-size: 3em;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 576px) {    }
+@media screen and (min-width: 768px) {
+	#result-search-bar input {
+		font-size: 4em;
+	}
+} 
+@media screen and (min-width: 992px) {    } 
+@media screen and (min-width: 1200px) {
+	#result-search-bar input {
+		font-size: 5em;
+	}
+} 
+@media screen and (min-width: 1400px) {    } 
+@media screen and (min-width: 1600px) {
+	#result-search-bar input {
+		font-size: 6em;
+	}
+} 
