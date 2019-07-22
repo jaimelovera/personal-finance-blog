@@ -1,6 +1,5 @@
 {% extends 'base/base.html' %}
 {% load static %}
-{% load filename %}
 {% load textfield_img_tags %}
 {% block title %}{{ post.title }} | GetMoneyStayBummy{% endblock %}
 {% block extra_head %}
@@ -22,7 +21,7 @@
 				<h5>{{ post.published_date | date:"M d, Y" }}</h5>
 			</div>
 			<div class="col-lg-6">
-				<img src="{% static 'blog/img/' %}{{ post.main_image | getfilename }}" alt="Image" id="main-block-image">
+				<img src="{{ post.main_image.url }}" alt="Image" id="main-block-image">
 			</div>
 		</div>
 	</div>
