@@ -2,9 +2,7 @@ from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
 from django.shortcuts import get_object_or_404
-from django.db.models import Q
-import operator
-from functools import reduce
+from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
 
 def not_found_404(request, exception):
     return render(request, 'blog/404.html', status=404)
@@ -15,14 +13,15 @@ def contact(request):
 def search(request):
     query = request.GET.get('query')
     if query:
-        query_list = query.split()
-        posts = Post.objects.exclude(published_date=None).filter(reduce(operator.or_,(Q(title__icontains=q) for q in query_list)) | reduce(operator.or_,(Q(body_html__icontains=q) for q in query_list)))
+        query_list = SearchQuery(query)
+        vector = SearchVector('title', weight='A') + SearchVector('body_html', weight='B')
+        posts = Post.objects.annotate(rank=SearchRank(vector, query_list)).filter(rank__gte=0.1).order_by('rank')
         count = posts.count()
         return render(request, 'blog/search.html', {'query': query, 'count': count, 'posts': posts})
     else:
         posts = None
         query = ''
-        count = posts.count()
+        count = 0
         return render(request, 'blog/search.html', {'query': query, 'count': count, 'posts': posts})
 
 def about(request):

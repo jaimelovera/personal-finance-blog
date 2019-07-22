@@ -2,7 +2,10 @@
 {% load static %}
 {% block title %}About | GetMoneyStayBummy{% endblock %}
 {% block extra_head %}
+	<link rel="stylesheet" href="{% static 'blog/css/post_detail.css' %}"><!--Use same CSS for the second block as post page.-->
 	<link rel="stylesheet" href="{% static 'blog/css/about.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Hind:600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i&display=swap" rel="stylesheet">
 {% endblock %}
 
 
@@ -18,11 +21,16 @@
 	</div>
 </div>
 
-<div class= "second-block">
+<div class= "post-block">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-12 second-block-text">
-				<h1><strong>TO-DO: Make About Page</strong></h1>
+			<div class="col-12 post-block-text">
+
+				<!--About Page Content Start. Use <p> <h1> <h2> and <img>'s-->
+				<h1>Our about page is under construction, please visit again later.</h1>
+				<img src="{% static 'blog/img/main/smile-sweat-emoji.png' %}" alt="Smile Emoji" style="height:50%;width:auto;">
+				<!--About Page Content End-->
+
 			</div>
 		</div>
 	</div>
