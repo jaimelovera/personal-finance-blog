@@ -2,7 +2,10 @@ from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
 from django.shortcuts import get_object_or_404
-from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
+from functools import reduce
+import operator
+from django.db.models import Q
+from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector #for PostgreSQL db
 
 def not_found_404(request, exception):
     return render(request, 'blog/404.html', status=404)
@@ -13,9 +16,16 @@ def contact(request):
 def search(request):
     query = request.GET.get('query')
     if query:
-        query_list = SearchQuery(query)
-        vector = SearchVector('title', weight='A') + SearchVector('body_html', weight='B')
-        posts = Post.objects.annotate(rank=SearchRank(vector, query_list)).filter(rank__gte=0.1).order_by('rank')
+        #When I move to a PostgreSQL db use these.
+        #query_list = SearchQuery(query)
+        #vector = SearchVector('title', weight='A') + SearchVector('body_html', weight='B')
+        #posts = Post.objects.exclude(published_date=None)
+        #posts = Post.objects.annotate(rank=SearchRank(vector, query_list)).filter(rank__gte=0.1).order_by('rank')
+
+        #For simple SQLite search. Not the best but all I need for now.
+        query_list = query.split()
+        posts = Post.objects.exclude(published_date=None)
+        posts = posts.filter(reduce(operator.or_,(Q(title__icontains=q) for q in query_list)) | reduce(operator.or_,(Q(body_html__icontains=q) for q in query_list)))
         count = posts.count()
         return render(request, 'blog/search.html', {'query': query, 'count': count, 'posts': posts})
     else:

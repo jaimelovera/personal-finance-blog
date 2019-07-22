@@ -84,13 +84,20 @@ CACHES = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'getmoneystaybummy',
-        'USER': 'jaimelovera',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+
+# PostgreSQL database for better search optimization. But I reverted to 
+# SQLite since I dont need it yet and it will save money on server fees..
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'getmoneystaybummy',
+#        'USER': 'jaimelovera',
+#        'PASSWORD': '',
+#        'HOST': 'localhost',
+#        'PORT': '',
+#    }
 }
 
 
