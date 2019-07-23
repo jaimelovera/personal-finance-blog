@@ -8,17 +8,20 @@
 	color: inherit;
 	border-bottom: 1px solid #2E2E2E;
 }
-
-.main-block-text {
-	flex-direction: column;
-	text-align: center;
-	color: #000000;
+.main-block a:hover #title-tiny-text{
+	border-bottom: 0px;
 }
-
-.main-block-text h1 {
-	font-size: 2.6em;
+.main-block-text {
 	color: #2E2E2E;
 	font-family: 'Merriweather Sans', sans-serif;
+	flex-direction: column;
+	text-align: center;
+}
+.main-block-text h1 {
+	font-size: 2.48em;
+}
+.main-block-text #title-tiny-text {
+	font-size: 0.4em;
 }
 
 #main-block-image {
@@ -55,34 +58,28 @@
 }
 
 
-
-@media screen and (min-width: 576px) {    }
+@media screen and (min-width: 576px) {
+	.main-block-text h1 {font-size: 2.75em;}
+}
 
 @media screen and (min-width: 768px) {    
-	.main-block-text h1 {
-		font-size: 3.4em;
-	}
+	.main-block-text h1 {font-size: 2.8em;}
 } 
 
 @media screen and (min-width: 992px) {
-	.main-block {
-		padding-top:3.5rem;
-	}
-	.main-block-text {
-		text-align: left;
-	}
-	.main-block-text h1 {
-		padding-bottom: 2rem;
-	}
+	.main-block {padding-top:3.5rem;}
+	.main-block-text {text-align: left;}
+	.main-block-text h1 {font-size: 2.9em;}
 } 
 
 @media screen and (min-width: 1200px) {
-	.main-block-text h1 {
-		font-size: 3.8em;
-	}
+	.main-block-text h1 {font-size: 3em;}
 } 
 
-@media screen and (min-width: 1400px) {    } 
-
-@media screen and (min-width: 1600px) {    } 
-
+@media screen and (min-width: 1400px) {
+	
+	.main-block-text h1 {font-size: 3.15em;}
+} 
+@media screen and (min-width: 1600px) {
+	.main-block-text h1 {font-size: 3.25em;}
+} 

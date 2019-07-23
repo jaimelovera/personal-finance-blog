@@ -31,31 +31,18 @@
 @media screen and (min-width: 576px) {    }
 
 @media screen and (min-width: 768px) {    
-	.main-block-text h1 {
-		font-size: 3.4em;
-	}
+	.main-block-text h1 {font-size: 3.4em;}
 } 
 
 @media screen and (min-width: 992px) {
-	.main-block {
-		padding-top:4.3rem;
-	}
-	.main-block-text {
-		text-align: left;
-	}
-	#main-block-image {
-		padding-top: 1rem;
-		padding-bottom: 0.75rem;
-	}
-	.main-block-text h1 {
-		padding-bottom: 2rem;
-	}
+	.main-block {padding-top:2.15rem;}
+	.main-block-text {text-align: left;}
+	#main-block-image {padding-top: 1rem; padding-bottom: 0.75rem;}
+	.main-block-text h1 {padding-bottom: 2rem;}
 } 
 
 @media screen and (min-width: 1200px) {
-	.main-block-text h1 {
-		font-size: 3.8em;
-	}
+	.main-block-text h1 {font-size: 3.8em;}
 } 
 
 @media screen and (min-width: 1400px) {    } 
