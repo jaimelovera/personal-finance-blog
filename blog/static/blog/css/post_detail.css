@@ -26,9 +26,8 @@
 	height: auto;
 }
 
-
-
 .post-block {
+	color: black;
 	padding-bottom: 8rem;
 }
 .post-block img {
@@ -64,89 +63,66 @@
 	text-align: center;
 	font-size: 4em;
 }
+.post-block-text ul {
+	font-size: 2em;
+}
+.post-block-text button {
+	margin: auto; 
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	display: block;
+	font-size: 2em;
+	background-color: #1BE300;
+	border-radius: 15px;
+	padding: 0.2rem;
+}
+.post-block-text button a {
+	text-decoration: none;
+	color: #000000;
+	padding: 0.5rem;
+}
+.post-block-text button:hover {
+	background-color: #1AD800;
+}
 
 
 
 @media screen and (min-width: 576px) {
-	.post-block .container-fluid {
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
+	.post-block .container-fluid {padding-left: 2rem; padding-right: 2rem;}
 }
+
 @media screen and (min-width: 768px) {    
-	.post-block .container-fluid {
-		padding-left: 4rem;
-		padding-right: 4rem;
-	}
-	.main-block-text h1 {
-		font-size: 3.8em;
-	}
-	.main-block-text p {
-		font-size: 1.3em;
-	}
-	.main-block-text h5 {
-		font-size: 1.3em;
-	}
-	.post-block img {
-		width: 65%;
-	}
-} 
+	.post-block .container-fluid {padding-left: 4rem; padding-right: 4rem;}
+	.main-block-text h1 {font-size: 3.8em;}
+	.main-block-text p {font-size: 1.3em;}
+	.main-block-text h5 {font-size: 1.3em;}
+	.post-block img {width: 65%;}
+}
+
 @media screen and (min-width: 992px) {
-	.post-block .container-fluid {
-		padding-left: 10rem;
-		padding-right: 10rem;
-	}
-	.main-block {
-		padding-top:3.5rem;
-	}
-	.main-block-text {
-		text-align: left;
-	}
-} 
+	.post-block .container-fluid {padding-left: 10rem; padding-right: 10rem;}
+	.main-block {padding-top:3.5rem;}
+	.main-block-text {text-align: left;}
+}
+
 @media screen and (min-width: 1200px) {
-	.post-block .container-fluid {
-		padding-left: 14rem;
-		padding-right: 14rem;
-	}
-} 
+	.post-block .container-fluid {padding-left: 14rem; padding-right: 14rem;}
+}
+
 @media screen and (min-width: 1400px) {
-	.post-block .container-fluid {
-		padding-left: 18rem;
-		padding-right: 18rem;
-	}
-	.main-block-text h1 {
-		font-size: 4em;
-	}
-	.main-block-text p {
-		font-size: 1.4em;
-	}
-	.main-block-text h5 {
-		font-size: 1.4em;
-	}
-} 
+	.post-block .container-fluid {padding-left: 18rem; padding-right: 18rem;}
+	.main-block-text h1 {font-size: 4em;}
+	.main-block-text p {font-size: 1.4em;}
+	.main-block-text h5 {font-size: 1.4em;}
+}
 
 @media screen and (min-width: 1600px) {
-	.post-block .container-fluid {
-		padding-left: 22rem;
-		padding-right: 22rem;
-	}
-	.main-block-text h1 {
-		font-size: 4.25em;
-	}
-	.main-block-text p {
-		font-size: 1.5em;
-	}
-	.main-block-text h5 {
-		font-size: 1.5em;
-	}
-
-	.post-block-text p {
-		font-size: 2.25em;
-	}
-	.post-block-text h1 {
-		font-size: 3.25em;
-	}
-	.post-block-text h2 {
-		font-size: 4.25em;
-	}
+	.post-block .container-fluid { padding-left: 22rem; padding-right: 22rem;}
+	.main-block-text h1 {font-size: 4.25em;}
+	.main-block-text p {font-size: 1.5em;}
+	.main-block-text h5 {font-size: 1.5em;}
+	.post-block-text p {font-size: 2.25em;}
+	.post-block-text button {font-size: 2.25em;}
+	.post-block-text h1 {font-size: 3.25em;}
+	.post-block-text h2 {font-size: 4.25em;}
 }

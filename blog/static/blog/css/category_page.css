@@ -3,10 +3,13 @@
 	padding-top:0.5rem;
 }
 
+.posts-block {
+	padding-top: 2rem;
+}
+
 .main-block-text {
 	flex-direction: column;
 	text-align: center;
-	color: #000000;
 }
 
 .main-block-text h1 {
@@ -20,12 +23,6 @@
 	height: 100%;
 	padding-top: 1rem;
 	padding-bottom: 0.75rem;
-}
-
-.articles-title h1{
-	text-align: center;
-	font-size: 2em;
-	font-family: 'Quicksand', sans-serif;
 }
 
 @media screen and (min-width: 576px) {    }

@@ -1,9 +1,9 @@
 {% load static %}
-<div class="container pb-5">
+<div class="container pb-3">
 	<div class="row">
 		{% for post in posts %}
 		<div class="col-6 col-md-4">
-			<a href="{% url 'post_detail' pk=post.pk slug=post.slug %}">
+			<a href="{% url 'post-detail' pk=post.pk slug=post.slug %}">
 				<div class="box">
 					<img class="box-image" src="{{ post.main_image.url }}" alt="Image" style="width:100%">
 					<div class="box-content">

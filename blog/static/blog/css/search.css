@@ -6,6 +6,10 @@
 	color: #2E2E2E;
 }
 
+.posts-block {
+	padding-bottom: 4rem;
+}
+
 #result-search-bar input {
 	font-size: 3em;
 	border: none;

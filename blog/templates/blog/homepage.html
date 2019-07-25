@@ -25,13 +25,15 @@
 	</div>
 </div>
 
-<div class="pt-3 articles-title">
-	<h1>Featured Articles</h1>
+<div class="pt-4 pb-2 featured-title">
+	<h1>Featured Posts</h1>
 </div>
-
 
 {% include 'base/posts_list.html' %}
 
+<div class="pb-5 view-all-posts-link">
+		<h1><a href="{% url 'all-posts' %}">View All Posts</a></h1>
+</div>
 
 <div class="emaillist">
     <!-- Begin Mailchimp Signup Form -->

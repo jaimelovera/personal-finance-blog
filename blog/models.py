@@ -21,7 +21,7 @@ class Post(models.Model):
 
     is_featured = models.CharField(max_length=3, choices=featured, default='NO')
     category = models.CharField(max_length=20, choices=categories)
-    main_image = models.ImageField(upload_to="img", validators=[validate_image], help_text="Aspect ratio must be exactly 3:2 </br> i.e. 1200 x 800")
+    main_image = models.ImageField(upload_to="img", validators=[validate_image], help_text="<h3>Aspect ratio must be exactly 3:2 </br> i.e. 1200 x 800</h3>")
     inline_image_1 = models.ImageField(upload_to="img", null=True, blank=True, default=None, help_text="Optional")
     inline_image_2 = models.ImageField(upload_to="img", null=True, blank=True, default=None, help_text="Optional")
     inline_image_3 = models.ImageField(upload_to="img", null=True, blank=True, default=None, help_text="Optional")
@@ -30,8 +30,8 @@ class Post(models.Model):
     inline_image_6 = models.ImageField(upload_to="img", null=True, blank=True, default=None, help_text="Optional")
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, blank=True, editable=False)
-    body_html = models.TextField(verbose_name="body (HTML)", help_text="<p> Use the following tags:</br> <xmp><h1>Bold Header</h1></xmp> <xmp><p>Paragraph</p></xmp> <xmp><h2>Quote</h2></xmp> <xmp><a href='url' target='_blank'>Link</a></xmp> <xmp><img1> - <img6></xmp> </p>")
-    published_date = models.DateTimeField(default=None,blank=True, null=True, help_text="Post will not be published until this field is set </br> *Leave blank for draft")
+    body_html = models.TextField(verbose_name="body (HTML)", help_text="<h3> Use the following tags:</br> <xmp><p>Paragraph</p></xmp> <xmp><h1>Bold Header</h1></xmp> <xmp><h2>Quote</h2></xmp> <xmp><ul><li>Bullet Points</li></ul></xmp> <xmp><a href='https' target='_blank'>Link</a></xmp> <xmp><button><a href='https' target='_blank'>Button</a></button></xmp> <xmp><img1> - <img6></xmp> </h3>")
+    published_date = models.DateTimeField(default=None,blank=True, null=True, help_text="<h3>Post will not be published until this field is set </br> *Leave blank for draft</h3>")
 
     def __str__(self):
         return self.title

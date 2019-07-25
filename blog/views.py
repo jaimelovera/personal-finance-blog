@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404
 from functools import reduce
 import operator
 from django.db.models import Q
-from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector #for PostgreSQL db
+#from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector #for PostgreSQL db
 
 def not_found_404(request, exception):
     return render(request, 'blog/404.html', status=404)
@@ -46,6 +46,10 @@ def legal(request):
 def homepage(request):
     posts = Post.objects.filter(is_featured='YES').exclude(published_date=None).order_by('-published_date')
     return render(request, 'blog/homepage.html', {'posts': posts})
+
+def all_posts(request):
+    posts = Post.objects.exclude(published_date=None).order_by('-published_date')
+    return render(request, 'blog/all_posts.html', {'posts': posts})
 
 def frugality(request):
     posts = Post.objects.filter(category='FRUGALITY').exclude(published_date=None).order_by('-published_date')
