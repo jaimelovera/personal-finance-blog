@@ -22,7 +22,7 @@ def search(request):
         #posts = Post.objects.exclude(published_date=None)
         #posts = Post.objects.annotate(rank=SearchRank(vector, query_list)).filter(rank__gte=0.1).order_by('rank')
 
-        #For simple SQLite search. Not the best but all I need for now.
+        #For simple SQLite search. All I need for now, lowers my hosting fees.
         query_list = query.split()
         posts = Post.objects.exclude(published_date=None)
         posts = posts.filter(reduce(operator.or_,(Q(title__icontains=q) for q in query_list)) | reduce(operator.or_,(Q(body_html__icontains=q) for q in query_list)))
@@ -64,7 +64,11 @@ def creditcards(request):
     return render(request, 'blog/creditcards.html', {'posts': posts})
 
 def post_detail(request, pk, slug):
-    posts = Post.objects.exclude(published_date=None)
+    #Checks for superuser authentication first. To preview unpublished posts using 'View on site' admin model link.
+    if request.user.is_superuser:
+        posts = Post.objects
+    else:
+        posts = Post.objects.exclude(published_date=None)
     post = get_object_or_404(posts, pk=pk, slug=slug)
     return render(request, 'blog/post_detail.html', {'post': post})
 

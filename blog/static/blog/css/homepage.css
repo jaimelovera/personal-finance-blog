@@ -1,6 +1,6 @@
 .main-block {
 	background-color: #1BE300;
-	padding-top:0.5rem;
+
 }
 
 .main-block a:hover h1 span{
@@ -31,24 +31,25 @@
 }
 
 .emaillist {
+	background-color: #E5E5E5; 
 	text-align: center;
-	padding-top: 1rem;
+	padding-top: 4rem;
 	padding-bottom: 4rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 #mc_embed_signup {
-	background:#fff; 
-	clear:left; 
+	background-color: #E5E5E5; 
+	clear: left;
 	width:100%;
 }
 #mc_embed_signup .button {
 	color: #2E2E2E !important;
-	background-color: #5FCA10 !important;
+	background-color: #1BE300 !important;
 }
 #mc_embed_signup .button:hover{
 	color: black !important;
-	background-color: #1BE300 !important;
+	background-color: #5FCA10 !important;
 }
 
 .featured-title h1{
@@ -61,6 +62,7 @@
 	font-size: 1.25em;
 	color: #B2B2B2;
 	font-family: 'Quicksand', sans-serif;
+	padding-bottom: 4rem;
 }
 .view-all-posts-link a:hover{
 	color: #2A2A2A;
@@ -84,7 +86,8 @@
 @media screen and (min-width: 992px) {
 	.main-block {padding-top:3.5rem;}
 	.main-block-text {text-align: left;}
-	.main-block-text h1 {font-size: 2.67em;}
+	#main-block-image {padding-top: 5rem;}
+	.main-block-text h1 {font-size: 2.67em; padding-bottom: 2rem;}
 
 	.featured-title h1{font-size: 1.9em;}
 	.view-all-posts-link h1 {font-size: 1.4em;}

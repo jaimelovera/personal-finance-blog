@@ -3,6 +3,16 @@
 {% load textfield_img_tags %}
 {% block title %}{{ post.title }} | GetMoneyStayBummy{% endblock %}
 {% block extra_head %}
+
+	<!-- for the facebook comment embedded code section -->
+	<meta property="fb:app_id"		  content="465923610807576" />
+	<meta property="og:url"           content="{{ request.build_absolute_uri }}" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="{{ post.title }}" />
+	<meta property="og:description"   content="" />
+	<meta property="og:image"         content="{{request.scheme}}://{{request.get_host}}{{ post.main_image.url }}" />
+	<!---------------------------------------------------->
+
 	<link rel="stylesheet" href="{% static 'blog/css/post_detail.css' %}">
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
@@ -14,14 +24,14 @@
 {% block content %}
 <div class= "main-block pb-5">
 	<div class="container">
-		<div class="row px-5 pb-5">
+		<div class="row px-5">
 			<div class="col-lg-6 my-auto pt-5 pb-2 main-block-text">
 				<h1>{{ post.title }}</h1>
 				<p>{{ post.get_category_display }}</p>
 				<h5>{{ post.published_date | date:"M d, Y" }}</h5>
 			</div>
 			<div class="col-lg-6">
-				<img src="{{ post.main_image.url }}" alt="Image" id="main-block-image">
+					<img src="{{ post.main_image.url }}" alt="Image" id="main-block-image">
 			</div>
 		</div>
 	</div>
@@ -30,15 +40,36 @@
 <div class= "post-block">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-12 post-block-text">
+			<div class="col post-block-text">
 				{{ post.body_html | textfield_img_tags:post | safe }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center fb-share-buttons">
+				<div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center fb-post-comment-header">
+				<h1>Have questions or feedback?</br>Add a comment!</h1>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col">
+				<div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-width="100%" data-numposts="6" data-order-by="social"></div>
 			</div>
 		</div>
 	</div>
 </div>
 
+
 {% endblock %}
+
 
 
 {% block javascript %}
+<!-- Facebook required JavaScript SDK for comment integration -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=465923610807576&autoLogAppEvents=1"></script>
 {% endblock %}
+

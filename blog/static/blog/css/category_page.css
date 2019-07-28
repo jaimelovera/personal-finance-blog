@@ -34,7 +34,7 @@
 @media screen and (min-width: 992px) {
 	.main-block {padding-top:2.15rem;}
 	.main-block-text {text-align: left;}
-	#main-block-image {padding-top: 1rem; padding-bottom: 0.75rem;}
+	#main-block-image {padding-top: 6rem; padding-bottom: 0.75rem;}
 	.main-block-text h1 {padding-bottom: 2rem;}
 } 
 

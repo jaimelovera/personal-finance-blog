@@ -1,7 +1,9 @@
 .main-block {
 	padding-top:0.5rem;
+	background-color: #1BE300;
 }
 .main-block-text {
+
 	text-align: center;
 }
 .main-block-text h1 {
@@ -24,11 +26,16 @@
 #main-block-image {
 	width: 100%;
 	height: auto;
+	border: 0px solid #1BE300;
+	border-radius: 10px;
 }
 
 .post-block {
 	color: black;
-	padding-bottom: 8rem;
+	padding-bottom: 12rem;
+}
+.post-block-text {
+	padding-top: 3rem;
 }
 .post-block img {
 	width: 80%;
@@ -85,6 +92,14 @@
 	background-color: #1AD800;
 }
 
+.fb-share-buttons {
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+}
+.fb-post-comment-header h1 {
+	font-size: 3em;
+	font-family: 'Hind', sans-serif;
+}
 
 
 @media screen and (min-width: 576px) {
@@ -106,18 +121,18 @@
 }
 
 @media screen and (min-width: 1200px) {
-	.post-block .container-fluid {padding-left: 14rem; padding-right: 14rem;}
+	.post-block .container-fluid {padding-left: 16rem; padding-right: 16rem;}
 }
 
 @media screen and (min-width: 1400px) {
-	.post-block .container-fluid {padding-left: 18rem; padding-right: 18rem;}
+	.post-block .container-fluid {padding-left: 22rem; padding-right: 22rem;}
 	.main-block-text h1 {font-size: 4em;}
 	.main-block-text p {font-size: 1.4em;}
 	.main-block-text h5 {font-size: 1.4em;}
 }
 
 @media screen and (min-width: 1600px) {
-	.post-block .container-fluid { padding-left: 22rem; padding-right: 22rem;}
+	.post-block .container-fluid { padding-left: 28rem; padding-right: 28rem;}
 	.main-block-text h1 {font-size: 4.25em;}
 	.main-block-text p {font-size: 1.5em;}
 	.main-block-text h5 {font-size: 1.5em;}

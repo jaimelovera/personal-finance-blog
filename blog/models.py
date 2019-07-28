@@ -1,6 +1,7 @@
 from django.template.defaultfilters import slugify
 from django.db import models
 from django.core.exceptions import ValidationError
+from django.urls import reverse
 
 def validate_image(image):
     file_height = image.height
@@ -32,6 +33,9 @@ class Post(models.Model):
     slug = models.SlugField(max_length=255, blank=True, editable=False)
     body_html = models.TextField(verbose_name="body (HTML)", help_text="<h3> Use the following tags:</br> <xmp><p>Paragraph</p></xmp> <xmp><h1>Bold Header</h1></xmp> <xmp><h2>Quote</h2></xmp> <xmp><ul><li>Bullet Points</li></ul></xmp> <xmp><a href='https' target='_blank'>Link</a></xmp> <xmp><button><a href='https' target='_blank'>Button</a></button></xmp> <xmp><img1> - <img6></xmp> </h3>")
     published_date = models.DateTimeField(default=None,blank=True, null=True, help_text="<h3>Post will not be published until this field is set </br> *Leave blank for draft</h3>")
+
+    def get_absolute_url(self):
+        return reverse('post-detail', kwargs={'pk':self.pk, 'slug':self.slug})
 
     def __str__(self):
         return self.title
