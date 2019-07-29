@@ -35,13 +35,20 @@
 	text-align: center;
 	padding-top: 4rem;
 	padding-bottom: 4rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
 }
 #mc_embed_signup {
 	background-color: #E5E5E5; 
 	clear: left;
 	width:100%;
+
+}
+#mc_embed_signup_scroll label {
+	font-size: 1.75em !important;
+	font-weight: 400 !important;
+	font-family: 'Quicksand', sans-serif;
 }
 #mc_embed_signup .button {
 	color: #2E2E2E !important;
@@ -98,6 +105,8 @@
 
 	.featured-title h1{font-size: 1.95em;}
 	.view-all-posts-link h1 {font-size: 1.45em;}
+
+	#mc_embed_signup_scroll label {font-size: 2em !important;}
 } 
 
 @media screen and (min-width: 1400px) {
