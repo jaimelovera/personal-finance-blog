@@ -7,7 +7,7 @@ A finance blog web application I developed using Django framework. It is designe
   - ``` python -m pip install --upgrade pip ```
 - I included a requirements.txt file that has the Django version I am using. 
   - Run ``` pip install -r requirements.txt ``` to install it.
-- There is no database included in my git repository, so create a new one. My Django app will create a SQLite database.
+- There is no database included in my git repository, so create a new one. My Django app will create a SQLite database. I left commented code for the creation of a PostgreSQL database. It will allow for better search implementations. But for now I am not using it to avoid unnecessary hosting fees.
   - Run ``` python manage.py makemigrations ``` 
   - Then ``` python manage.py migrate ```
 - Since its a new database there will be no superuser defined. Make one.
