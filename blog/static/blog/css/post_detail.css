@@ -58,6 +58,7 @@
 .post-block-text h1 {
 	font-family: 'Hind', sans-serif;
 	font-size: 3em;
+	padding-top: 3rem;
 }
 .post-block-text h2 {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -72,6 +73,9 @@
 }
 .post-block-text ul {
 	font-size: 2em;
+}
+.post-block-text li {
+	padding-bottom: 0.75rem;
 }
 .post-block-text button {
 	margin: auto; 
