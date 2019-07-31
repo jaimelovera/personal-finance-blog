@@ -105,6 +105,11 @@
 	font-family: 'Hind', sans-serif;
 }
 
+/* To make facebook comment plugin more fluid */
+.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+    width: 100% !important;
+}
+
 
 @media screen and (min-width: 576px) {
 	.post-block .container-fluid {padding-left: 2rem; padding-right: 2rem;}
