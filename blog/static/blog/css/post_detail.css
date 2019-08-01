@@ -35,6 +35,8 @@
 	padding-bottom: 12rem;
 }
 .post-block-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	padding-top: 3rem;
 }
 .post-block img {
@@ -62,7 +64,7 @@
 }
 .post-block-text h2 {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 200;
+	font-weight: 600;
 	font-style: italic;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -70,12 +72,16 @@
 	padding-right: 5rem;
 	text-align: center;
 	font-size: 4em;
+	color: #1BE300;
 }
 .post-block-text ul {
 	font-size: 2em;
 }
 .post-block-text li {
-	padding-bottom: 1.5rem;
+	padding-bottom: 1.25rem;
+}
+.post-block-text strong {
+	font-weight: 600;
 }
 .post-block-text button {
 	margin: auto; 
