@@ -51,9 +51,9 @@ def all_posts(request):
     posts = Post.objects.exclude(published_date=None).order_by('-published_date')
     return render(request, 'blog/all_posts.html', {'posts': posts})
 
-def frugality(request):
-    posts = Post.objects.filter(category='FRUGALITY').exclude(published_date=None).order_by('-published_date')
-    return render(request, 'blog/frugality.html', {'posts': posts})
+def saving(request):
+    posts = Post.objects.filter(category='SAVING').exclude(published_date=None).order_by('-published_date')
+    return render(request, 'blog/saving.html', {'posts': posts})
 
 def investing(request):
     posts = Post.objects.filter(category='INVESTING').exclude(published_date=None).order_by('-published_date')

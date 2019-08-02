@@ -11,7 +11,7 @@ def validate_image(image):
 
 class Post(models.Model):
     categories = (
-        ('FRUGALITY', 'Frugality'),
+        ('SAVING', 'Saving'),
         ('INVESTING', 'Investing'),
         ('CREDIT_CARDS', 'Credit Cards'),
     )
