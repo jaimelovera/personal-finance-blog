@@ -3,7 +3,6 @@
 	background-color: #1BE300;
 }
 .main-block-text {
-
 	text-align: center;
 }
 .main-block-text h1 {
@@ -31,8 +30,8 @@
 }
 
 .post-block {
-	color: black;
-	padding-bottom: 12rem;
+	color: #000;
+	padding-bottom: 4rem;
 }
 .post-block-text {
 	font-family: 'Open Sans', sans-serif;
@@ -51,9 +50,14 @@
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+
 .post-block-text a {
 	text-decoration: underline;
 }
+.post-block-text a:focus, .post-block-text a:active {
+  color: #000;
+}
+
 .post-block-text p {
 	font-size: 2em;
 }
@@ -65,14 +69,19 @@
 .post-block-text h2 {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 600;
-	font-style: italic;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	padding-left: 5rem;
-	padding-right: 5rem;
-	text-align: center;
 	font-size: 4em;
-	color: #1BE300;
+	color: #000;
+	background-color: #1BE300;
+	font-style: italic;
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-top:2rem;
+	margin-bottom:2rem;
+	margin-left:1rem;
+	margin-right:1rem;
 }
 .post-block-text ul {
 	font-size: 2em;
@@ -103,8 +112,7 @@
 }
 
 .fb-share-buttons {
-	padding-top: 1rem;
-	padding-bottom: 4rem;
+	padding-bottom: 6rem;
 }
 .fb-post-comment-header h1 {
 	font-size: 3em;
@@ -127,6 +135,16 @@
 	.main-block-text p {font-size: 1.3em;}
 	.main-block-text h5 {font-size: 1.3em;}
 	.post-block img {width: 65%;}
+	.post-block-text h2 {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		margin-top:3rem;
+		margin-bottom:3rem;
+		margin-left:2rem;
+		margin-right:2rem;
+	}
 }
 
 @media screen and (min-width: 992px) {
