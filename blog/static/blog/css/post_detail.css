@@ -52,9 +52,14 @@
 }
 
 .post-block-text a {
+	color: #000;
 	text-decoration: underline;
 }
-@media (hover: hover) {.post-block-text a:hover {text-decoration: none;}}
+.post-block-text a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+@media (hover: hover) {.post-block-text a:hover {color:#5FCA10;text-decoration:none;}}
 
 .post-block-text p {
 	font-size: 2em;
@@ -105,7 +110,7 @@
 	color: #000;
 	padding: 0.5rem;
 }
-@media (hover: hover) {.post-block-text button:hover {background-color: #1AD800;}}
+.post-block-text button:hover {background-color: #1AD800;}
 
 .fb-share-buttons {
 	padding-bottom: 6rem;

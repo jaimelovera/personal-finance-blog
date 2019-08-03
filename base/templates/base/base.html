@@ -2,6 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144341523-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-144341523-1');
+        </script>
+    	
         <title>{% block title %}{% endblock %}</title>
        	<meta name="description" content="GetMoneyStayBummy">
         <link rel="icon" href="{% static 'blog/img/main/favicon.png' %}">
@@ -72,12 +83,12 @@
 					<div class = "row no-gutters" id="footer-links">
 						<div class = "col-xs col-md-4">
 							<a href="{% url 'about' %}">About</a>
-							</br>
+							</br></br>
 							<a href="#"></a><!-- Empty link - placeholder for future -->
 						</div>
 						<div class = "col-xs col-md-8">
 							<a href="{% url 'contact' %}">Contact</a>
-							</br>
+							</br></br>
 							<a href="#"></a><!-- Empty link - placeholder for future -->
 						</div>
 					</div>
