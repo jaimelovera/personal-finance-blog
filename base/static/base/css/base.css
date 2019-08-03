@@ -25,14 +25,15 @@ body {
 }
 
 a {
-	color: inherit;
-	text-decoration: none
+	color: #000;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #5FCA10;
-	text-decoration: none
+	color: #000;
+	text-decoration: none;
 }
+@media (hover: hover) {a:hover {color:#5FCA10;}}
 
 #mainNav {
 	position: fixed;
@@ -128,50 +129,25 @@ a:hover {
 }
 
 
-
-
 @media screen and (min-width: 576px) {    }
 
 @media screen and (min-width: 768px) {
-	#main-section {
-		margin-top: 48px;
-	}
-	.navbar-nav {
-		padding-top:0;
-		padding-bottom:0;
-	}
-	.navbar-nav > .nav-item {
-    	padding-top: 0.45rem;
-    	padding-bottom: 0.45rem;
-	}
-	#mainNav .nav-link {
-		font-size: 1.7em;
-	}
-	.logo-nav {
-		height: 2rem;
-	}
-	.logo-footer {
-		height: 1rem;
-		padding-bottom: 0rem;
-	}
-	#content-wrap {
-		padding-bottom: 24rem;    /* Footer height */
-	}
-	#footer {
-		height: 24rem;            /* Footer height */
-		padding-top: 5rem;
-		padding-bottom: 1.5rem;
-	}
-} 
+	#main-section {margin-top: 48px;}
+	.navbar-nav {padding-top:0;padding-bottom:0;}
+	.navbar-nav > .nav-item {padding-top: 0.45rem;padding-bottom: 0.45rem;}
+	#mainNav .nav-link {font-size: 1.7em;}
+	.logo-nav {height: 2rem;}
+	.logo-footer {height: 1rem;padding-bottom: 0rem;}
+	#content-wrap {padding-bottom: 24rem/* Footer height */;}
+	#footer {height: 24rem/* Footer height */;padding-top: 5rem;padding-bottom: 1.5rem;}
+}
 
 @media screen and (min-width: 992px) {
-	.logo-footer {
-		height: 1.4rem;
-	}
-} 
+	.logo-footer {height: 1.4rem;}
+}
 
-@media screen and (min-width: 1200px) {    } 
+@media screen and (min-width: 1200px) {    }
 
-@media screen and (min-width: 1400px) {    } 
+@media screen and (min-width: 1400px) {    }
 
-@media screen and (min-width: 1600px) {    } 
+@media screen and (min-width: 1600px) {    }
