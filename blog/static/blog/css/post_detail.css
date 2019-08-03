@@ -54,9 +54,6 @@
 .post-block-text a {
 	text-decoration: underline;
 }
-.post-block-text a:focus, .post-block-text a:active {
-  color: #000;
-}
 
 .post-block-text p {
 	font-size: 2em;

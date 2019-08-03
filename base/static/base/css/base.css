@@ -84,6 +84,8 @@ a:hover {
 .navbar-nav > .nav-item{
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
 }
 
 .logo-nav {

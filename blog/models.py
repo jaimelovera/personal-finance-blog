@@ -31,7 +31,7 @@ class Post(models.Model):
     inline_image_6 = models.ImageField(upload_to="img", null=True, blank=True, default=None, help_text="Optional")
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, blank=True, editable=False)
-    body_html = models.TextField(verbose_name="body (HTML)", help_text="<h3> Use the following tags:</br> <xmp><p>Paragraph</p></xmp> <xmp><h1>Bold Header</h1></xmp> <xmp><h2>Quote</h2></xmp> <xmp><ul><li>Bullet Points</li></ul></xmp> <xmp><a href='https' target='_blank'>Link</a></xmp> <xmp><button><a href='https' target='_blank'>Button</a></button></xmp> <xmp><img1> - <img6></xmp> </h3>")
+    body_html = models.TextField(verbose_name="body (HTML)", help_text="<h3> Use the following tags:</br> <xmp><p>Paragraph</p></xmp> <xmp><h1>Bold Header</h1></xmp> <xmp><h2>Quote</h2></xmp> <xmp><ul><li>Bullet Points</li></ul></xmp> <xmp><a href='https'>Link</a></xmp> <xmp><button><a href='https'>Button</a></button></xmp> <xmp><img1> - <img6></xmp> </h3>")
     published_date = models.DateTimeField(default=None,blank=True, null=True, help_text="<h3>Post will not be published until this field is set </br> *Leave blank for draft</h3>")
 
     def get_absolute_url(self):
