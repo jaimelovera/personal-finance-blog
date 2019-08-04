@@ -18,7 +18,7 @@
 	text-align: center;
 }
 .main-block-text h1 {
-	font-size: 2.38em;
+	font-size: 2.3em;
 }
 .main-block-text #title-tiny-text {
 	font-size: 0.4em;
@@ -77,14 +77,14 @@
 
 
 @media screen and (min-width: 576px) {
-	.main-block-text h1 {font-size: 2.75em;}
+	.main-block-text h1 {font-size: 2.5em;}
 
 	.featured-title h1{font-size: 1.8em;}
 	.view-all-posts-link h1 {font-size: 1.3em;}
 }
 
 @media screen and (min-width: 768px) {    
-	.main-block-text h1 {font-size: 2.8em;}
+	.main-block-text h1 {font-size: 3em;}
 
 	.featured-title h1{font-size: 1.85em;}
 	.view-all-posts-link h1 {font-size: 1.35em;}
@@ -94,7 +94,7 @@
 	.main-block {padding-top:3.5rem;}
 	.main-block-text {text-align: left;}
 	#main-block-image {padding-top: 5rem;}
-	.main-block-text h1 {font-size: 2.67em; padding-bottom: 2rem;}
+	.main-block-text h1 {font-size: 2.55em; padding-bottom: 2rem;}
 
 	.featured-title h1{font-size: 1.9em;}
 	.view-all-posts-link h1 {font-size: 1.4em;}
@@ -110,15 +110,13 @@
 } 
 
 @media screen and (min-width: 1400px) {
-	.main-block-text h1 {font-size: 3.15em;}
+	.main-block-text h1 {font-size: 3.1em;}
 
 	.featured-title h1{font-size: 2em;}
 	.view-all-posts-link h1 {font-size: 1.5em;}
 } 
 
 @media screen and (min-width: 1600px) {
-	.main-block-text h1 {font-size: 3.25em;}
-
 	.featured-title h1{font-size: 2.05em;}
 	.view-all-posts-link h1 {font-size: 1.55em;}
 } 
