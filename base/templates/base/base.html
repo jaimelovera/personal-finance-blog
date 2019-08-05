@@ -130,6 +130,24 @@
 		<!-- Bootstrap core JavaScript -->
 		<script src="{% static 'base/vendor/jquery-3.4.1/js/jquery.min.js' %}"></script>
   		<script src="{% static 'base/vendor/bootstrap-4.3.1/js/bootstrap.bundle.min.js' %}"></script>
+  		
+
+  		<!-- Some browsers show body background when end of scroll is met. This makes it white on top, and black on the footer to match. -->
+  		<script>
+  		$(document).ready(function(){       
+            var scroll_pos = 0;
+            $(document).scroll(function() { 
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 100) {
+                    $("body").css('background-color', '#2A2A2A');
+                } else {
+                    $("body").css('background-color', '#FFF');
+                }
+            });
+        });
+    	</script>
+
+
   		{% block javascript %}{% endblock %}
     </body>
 </html>

@@ -1,7 +1,18 @@
 .main-block {
 	padding-top:0.5rem;
 	background-color: #1BE300;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
+/*A copy of the fixed version to take up the space and fill the height.*/
+.main-block-2 {
+	position: relative;
+	visibility: hidden;
+	width: 100%;
+	z-index: -1;
+}
+
 .main-block-text {
 	text-align: center;
 }
@@ -30,8 +41,13 @@
 }
 
 .post-block {
+	background-color: #FFF;
+	border-top: 3px solid #1BE300;
 	color: #000;
 	padding-bottom: 4rem;
+	position: relative;
+	z-index: 2;
+
 }
 .post-block-text {
 	font-family: 'Open Sans', sans-serif;
@@ -124,12 +140,15 @@
 }
 .fb-like, .fb-like span, .fb-like.fb_iframe_widget {
     height: auto !important;
+    width: auto !important;
 }
 .fb-like, .fb-like span, .fb-like.fb_iframe_widget span{
     height: auto !important;
+    width: auto !important;
 }
 .fb-like, .fb-like span, .fb-like.fb_iframe_widget span iframe{
     height: auto !important;
+    width: auto !important;
 }
 
 
