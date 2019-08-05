@@ -118,9 +118,18 @@
 	font-family: 'Hind', sans-serif;
 }
 
-/* To make facebook comment plugin more fluid */
+/* To make facebook comment plugin more fluid. And fixes plugins loading invisible sometimes.*/
 .fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
     width: 100% !important;
+}
+.fb-like, .fb-like span, .fb-like.fb_iframe_widget {
+    height: auto !important;
+}
+.fb-like, .fb-like span, .fb-like.fb_iframe_widget span{
+    height: auto !important;
+}
+.fb-like, .fb-like span, .fb-like.fb_iframe_widget span iframe{
+    height: auto !important;
 }
 
 
