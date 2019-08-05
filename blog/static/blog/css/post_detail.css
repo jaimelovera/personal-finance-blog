@@ -138,11 +138,8 @@
 .fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
     width: 100% !important;
 }
-.fb_iframe_widget {
-	display: inline-block !important;
-}
-.fb_iframe_widget_fluid {
-	display: inline !important;
+.fb-share-buttons {
+	height: 100px;
 }
 
 @media screen and (min-width: 576px) {
