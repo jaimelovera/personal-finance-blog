@@ -3,9 +3,10 @@ from django.utils import timezone
 from .models import Post
 from django.shortcuts import get_object_or_404
 from functools import reduce
-import operator
+from django.conf import settings
 from django.db.models import Q
-#from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector #for PostgreSQL db
+import operator
+import os
 
 def not_found_404(request, exception):
     return render(request, 'blog/404.html', status=404)
@@ -15,15 +16,16 @@ def contact(request):
 
 def search(request):
     query = request.GET.get('query')
-    if query:
-        #When I move to a PostgreSQL db use these.
-        #query_list = SearchQuery(query)
-        #vector = SearchVector('title', weight='A') + SearchVector('body_html', weight='B')
-        #posts = Post.objects.exclude(published_date=None)
-        #posts = Post.objects.annotate(rank=SearchRank(vector, query_list)).filter(rank__gte=0.1).order_by('rank')
+    query_list = query.lower().split()
+    stop_words = []
 
-        #For simple SQLite search. All I need for now, lowers my hosting fees.
-        query_list = query.split()
+    with open(os.path.join(settings.BASE_DIR, 'blog', 'stop_words.txt')) as f:
+        stop_words = f.read().splitlines()
+
+    for word in stop_words:
+        while word in query_list: query_list.remove(word) 
+
+    if query_list:
         posts = Post.objects.exclude(published_date=None)
         posts = posts.filter(reduce(operator.or_,(Q(title__icontains=q) for q in query_list)) | reduce(operator.or_,(Q(body_html__icontains=q) for q in query_list)))
         count = posts.count()

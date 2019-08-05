@@ -11,7 +11,7 @@
 
 <div class= "main-block">
 	<form id ="result-search-bar" action="{% url 'search' %}" method="get">
-		<input name="query" type="search" autocomplete="off" value="{{ query }}" placeholder="Search articles..." required>
+		<input name="query" type="search" autocomplete="off" value="{{ query }}" placeholder="Search articles...">
 	</form>
 	<div class="count-message">
 		<p>We found {{ count }} result<span>(s)</span></p>
