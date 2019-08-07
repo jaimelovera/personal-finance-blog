@@ -43,7 +43,7 @@
 					<ul class="navbar-nav">
 					    <li class="nav-item mx-auto mx-md-0 ml-md-auto pb-0 d-md-none search-bar">
 							<form action="{% url 'search' %}" method="get">
-								<input name="query" type="search" autocomplete="off" placeholder="Search articles..." required>
+								<input name="query" type="search" autocomplete="off" placeholder="Search articles...">
 							</form>
 						</li>
 						<li class="nav-item">
@@ -100,20 +100,16 @@
 					<a href="https://www.instagram.com/getmoneystaybummy/" target="_blank" class="mx-2"><i class="fab fa-instagram fa-2x"></i></a>
 				</div>
 			</div>
+
 			<div class = "row pt-5">
 				<div class = "col-md-6 text-center text-md-left">
 					<div class = "row no-gutters">
-						<div class = "col-md-2 text-center text-md-left" id="footer-logo">
-							<img src="{% static 'blog/img/main/logo.png' %}" class ="logo-footer" alt="LOGO">
+						<div class = "col-md-2 text-center text-md-left mt-2 mb-2 mb-md-auto mt-md-auto">
+							<img src="{% static 'blog/img/main/logo.png' %}" id="footer-logo" class ="img-fluid" alt="LOGO">
 						</div>
-
-						<div class= "col-md-10 text-center text-md-left">
-								<div class= "row">
-									<div class= "col">
-										<a id="footer-copyright">&copy; 2019 GetMoneyStayBummy</a>
-										<p id="footer-disclaimer-links"><a href="{% url 'legal' %}#disclaimer">Full Disclaimer</a> | <a href="{% url 'legal' %}#privacy-policy">Privacy Policy</a> | <a href="{% url 'legal' %}#terms-of-use">Terms of Use</a></p>
-									</div>
-								</div>
+						<div class= "col-md-10 text-center text-md-left mb-4 mb-md-0 pl-2">
+							<a id="footer-copyright">&copy; 2019 GetMoneyStayBummy</a>
+							<p class="mb-0" id="footer-disclaimer-links"><a href="{% url 'legal' %}#disclaimer">Full Disclaimer</a> | <a href="{% url 'legal' %}#privacy-policy">Privacy Policy</a> | <a href="{% url 'legal' %}#terms-of-use">Terms of Use</a></p>
 						</div>
 					</div>
 				</div>
@@ -130,22 +126,7 @@
 		<!-- Bootstrap core JavaScript -->
 		<script src="{% static 'base/vendor/jquery-3.4.1/js/jquery.min.js' %}"></script>
   		<script src="{% static 'base/vendor/bootstrap-4.3.1/js/bootstrap.bundle.min.js' %}"></script>
-  		
 
-  		<!-- Some browsers show body background when end of scroll is met. This makes it white on top, and black on the footer to match. -->
-  		<script>
-  		$(document).ready(function(){       
-            var scroll_pos = 0;
-            $(document).scroll(function() { 
-                scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 100) {
-                    $("body").css('background-color', '#2A2A2A');
-                } else {
-                    $("body").css('background-color', '#FFF');
-                }
-            });
-        });
-    	</script>
 
 
   		{% block javascript %}{% endblock %}
