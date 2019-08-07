@@ -4,15 +4,14 @@
 }
 
 #content-wrap {
-  padding-bottom: 32rem;    /* Footer height */
+  padding-bottom: 38rem;    /* Footer height */
 }
 
 #footer {
 	position: absolute;
-	z-index: 99999;
 	bottom: 0;
 	width: 100%;
-	height: 32rem;            /* Footer height */
+	height: 38rem;            /* Footer height */
 	background-color: #2A2A2A;
 	color: white;
 	padding-top: 5rem;
@@ -39,16 +38,14 @@ a:hover {
 	position: fixed;
 	border-bottom: 1px solid #EBEBEB;
 	background-color: white;
+	z-index:;
 }
 
 .navbar-nav {
 	padding-top:10%;
 	padding-bottom:100%;
 	width: 100%;
-}
-
-#mainNav .navbar-brand {
-
+	z-index: 9999;
 }
 
 #mainNav .navbar-toggler {
@@ -58,17 +55,19 @@ a:hover {
 	outline: none;
 }
 
+@media (hover: hover) {
+	#mainNav .navbar-toggler:hover {
+		color: #000;
+	}
+}
+
 .navbar-toggler>.close {
     display:inline;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
-.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-bars {
     display:none;
-}
-
-.navbar-toggler:hover {
-	background-color: #EBEBEB;
 }
 
 #mainNav .nav-link {
@@ -90,11 +89,15 @@ a:hover {
 }
 
 .logo-nav {
-	height: 2.5rem;
+	height: 2rem;
+}
+
+.fa.fa-navicon {
+  color: black;
 }
 
 #main-section {
-	margin-top: 56px;
+	margin-top: 42px;
 	background-color: #FFF;
 }
 
@@ -130,7 +133,6 @@ a:hover {
 @media screen and (min-width: 576px) {    }
 
 @media screen and (min-width: 768px) {
-	#main-section {margin-top: 48px;}
 	.navbar-nav {
 		padding-top:0;
 		padding-bottom:0;
@@ -140,14 +142,14 @@ a:hover {
 		padding-bottom: 0.45rem;
 	}
 	#mainNav .nav-link {font-size: 1.7em;}
-	.logo-nav {height: 2rem;}
+	.logo-nav {height: 1.9rem;}
 	#footer-logo {
 		width: 100%;
 		height: auto;
 	}
-	#content-wrap {padding-bottom: 24rem/* Footer height */;}
+	#content-wrap {padding-bottom: 30rem/* Footer height */;}
 	#footer {
-		height: 24rem/* Footer height */;
+		height: 30rem/* Footer height */;
 		padding-top: 5rem;
 		padding-bottom: 1.5rem;
 	}

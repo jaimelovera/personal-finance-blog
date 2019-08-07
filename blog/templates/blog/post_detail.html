@@ -32,6 +32,7 @@
 
 
 <div class= "main-block pb-5">
+	
 	<div class="container">
 		<div class="row px-5">
 			<div class="col-lg-6 my-auto pt-5 pb-2 main-block-text">
@@ -45,22 +46,6 @@
 		</div>
 	</div>
 </div>
-<!-- This is a copy to take up the height for the fixed poition version.-->
-<div class= "main-block pb-5 main-block-2">
-	<div class="container">
-		<div class="row px-5">
-			<div class="col-lg-6 my-auto pt-5 pb-2 main-block-text">
-				<h1>{{ post.title }}</h1>
-				<p>{{ post.get_category_display }}</p>
-				<h5>{{ post.published_date | date:"M d, Y" }}</h5>
-			</div>
-			<div class="col-lg-6">
-					<img src="{{ post.main_image.url }}" alt="Image" id="main-block-image">
-			</div>
-		</div>
-	</div>
-</div>
-
 
 
 <div class= "post-block">
