@@ -35,7 +35,7 @@
 	background-color: #FFF;
 	border-top: 3px solid #1BE300;
 	color: #000;
-	padding-bottom: 4rem;
+	padding-bottom: 10rem;
 }
 .post-block-text {
 	font-family: 'Open Sans', sans-serif;
@@ -115,7 +115,7 @@
 .post-block-text button:hover {background-color: #1AD800;}
 
 .fb-share-buttons {
-	padding-bottom: 6rem;
+	padding-bottom: 10rem;
 }
 .fb-post-comment-header h1 {
 	font-size: 3em;

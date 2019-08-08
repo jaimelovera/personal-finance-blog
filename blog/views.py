@@ -1,10 +1,9 @@
 from django.shortcuts import render
-from django.utils import timezone
 from .models import Post
 from django.shortcuts import get_object_or_404
 from functools import reduce
 from django.conf import settings
-from django.db.models import Q
+from django.db.models import Q, Value, IntegerField
 import operator
 import os
 
@@ -26,8 +25,17 @@ def search(request):
         while word in query_list: query_list.remove(word) 
 
     if query_list:
+        #A simple search query that excludes stop words and places results in order of relevance. Depending if
+        #search words exist in the title+body, or just title, or just body.
         posts = Post.objects.exclude(published_date=None)
-        posts = posts.filter(reduce(operator.or_,(Q(title__icontains=q) for q in query_list)) | reduce(operator.or_,(Q(body_html__icontains=q) for q in query_list)))
+        posts_title = posts.filter(reduce(operator.or_,(Q(title__icontains=q) for q in query_list)))
+        posts_body = posts.filter(reduce(operator.or_,(Q(body_html__icontains=q) for q in query_list)))
+        
+        posts_both = (posts_title&posts_body).annotate(order=Value(1, IntegerField()))
+        posts_title = posts_title.exclude(pk__in=posts_both).annotate(order=Value(2, IntegerField()))
+        posts_body = posts_body.exclude(pk__in=posts_both).annotate(order=Value(3, IntegerField()))
+
+        posts = posts_both.union(posts_title, posts_body).order_by("order")
         count = posts.count()
         return render(request, 'blog/search.html', {'query': query, 'count': count, 'posts': posts})
     else:
@@ -73,4 +81,3 @@ def post_detail(request, pk, slug):
         posts = Post.objects.exclude(published_date=None)
     post = get_object_or_404(posts, pk=pk, slug=slug)
     return render(request, 'blog/post_detail.html', {'post': post})
-
