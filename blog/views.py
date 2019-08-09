@@ -16,25 +16,24 @@ def contact(request):
 def search(request):
     query = request.GET.get('query')
     query_list = query.lower().split()
+    query_list = list(set(query_list)) #remove duplicate words
     stop_words = []
 
     with open(os.path.join(settings.BASE_DIR, 'blog', 'stop_words.txt')) as f:
         stop_words = f.read().splitlines()
 
     for word in stop_words:
-        while word in query_list: query_list.remove(word) 
+        while word in query_list: query_list.remove(word)
 
     if query_list:
         #A simple search query that excludes stop words and places results in order of relevance. Depending if
-        #search words exist in the title+body, or just title, or just body.
+        #search words found in the title+body, or just title, or just body. Temporary while I use SQLite.
         posts = Post.objects.exclude(published_date=None)
-        posts_title = posts.filter(reduce(operator.or_,(Q(title__icontains=q) for q in query_list)))
-        posts_body = posts.filter(reduce(operator.or_,(Q(body_html__icontains=q) for q in query_list)))
-        
+        posts_title = posts.filter(reduce(operator.or_,(Q(title__icontains=word) for word in query_list)))
+        posts_body = posts.filter(reduce(operator.or_,(Q(body_html__icontains=word) for word in query_list)))
         posts_both = (posts_title&posts_body).annotate(order=Value(1, IntegerField()))
         posts_title = posts_title.exclude(pk__in=posts_both).annotate(order=Value(2, IntegerField()))
         posts_body = posts_body.exclude(pk__in=posts_both).annotate(order=Value(3, IntegerField()))
-
         posts = posts_both.union(posts_title, posts_body).order_by("order")
         count = posts.count()
         return render(request, 'blog/search.html', {'query': query, 'count': count, 'posts': posts})
