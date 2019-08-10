@@ -18,23 +18,20 @@ def search(request):
     query_list = query.lower().split()
     query_list = list(set(query_list)) #remove duplicate words
     stop_words = []
-
+    #opens file with stop words.
     with open(os.path.join(settings.BASE_DIR, 'blog', 'stop_words.txt')) as f:
         stop_words = f.read().splitlines()
-
+    #removes stop words.
     for word in stop_words:
         while word in query_list: query_list.remove(word)
-
     if query_list:
-        #A simple search query that excludes stop words and places results in order of relevance. Depending if
-        #search words found in the title+body, or just title, or just body. Temporary while I use SQLite.
+        #A simple search query. Temporary while I use SQLite.
         posts = Post.objects.exclude(published_date=None)
-        posts_title = posts.filter(reduce(operator.or_,(Q(title__icontains=word) for word in query_list)))
-        posts_body = posts.filter(reduce(operator.or_,(Q(body_html__icontains=word) for word in query_list)))
-        posts_both = (posts_title&posts_body).annotate(order=Value(1, IntegerField()))
-        posts_title = posts_title.exclude(pk__in=posts_both).annotate(order=Value(2, IntegerField()))
-        posts_body = posts_body.exclude(pk__in=posts_both).annotate(order=Value(3, IntegerField()))
-        posts = posts_both.union(posts_title, posts_body).order_by("order")
+        posts_and = posts.filter(reduce(operator.and_,(Q(title__icontains=word) for word in query_list))|
+            reduce(operator.and_,(Q(body_html__icontains=word) for word in query_list))).annotate(order=Value(1, IntegerField()))
+        posts_or = posts.exclude(pk__in=posts_and).filter(reduce(operator.or_,(Q(title__icontains=word) for word in query_list))|
+            reduce(operator.or_,(Q(body_html__icontains=word) for word in query_list))).annotate(order=Value(2, IntegerField()))
+        posts = posts_and.union(posts_or).order_by("order")[:15]
         count = posts.count()
         return render(request, 'blog/search.html', {'query': query, 'count': count, 'posts': posts})
     else:
