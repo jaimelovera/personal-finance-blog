@@ -27,11 +27,20 @@ def search(request):
     if query_list:
         #A simple search query. Temporary while I use SQLite.
         posts = Post.objects.exclude(published_date=None)
-        posts_and = posts.filter(reduce(operator.and_,(Q(title__icontains=word) for word in query_list))|
-            reduce(operator.and_,(Q(body_html__icontains=word) for word in query_list))).annotate(order=Value(1, IntegerField()))
-        posts_or = posts.exclude(pk__in=posts_and).filter(reduce(operator.or_,(Q(title__icontains=word) for word in query_list))|
-            reduce(operator.or_,(Q(body_html__icontains=word) for word in query_list))).annotate(order=Value(2, IntegerField()))
-        posts = posts_and.union(posts_or).order_by("order")[:15]
+
+        #AND title/body
+        posts_title_and = posts.filter(
+            reduce(operator.and_,(Q(title__icontains=word) for word in query_list))).annotate(order=Value(1, IntegerField()))
+        posts_body_and =  posts.exclude(pk__in=posts_title_and).filter(
+            reduce(operator.and_,(Q(body_html__icontains=word) for word in query_list))).annotate(order=Value(3, IntegerField()))
+
+        #OR title/body
+        posts_title_or = posts.exclude(pk__in=(posts_title_and|posts_body_and)).filter(
+            reduce(operator.or_,(Q(title__icontains=word) for word in query_list))).annotate(order=Value(2, IntegerField()))
+        posts_body_or =  posts.exclude(pk__in=(posts_title_and|posts_body_and|posts_title_or)).filter(
+            reduce(operator.or_,(Q(body_html__icontains=word) for word in query_list))).annotate(order=Value(4, IntegerField()))
+
+        posts = posts_title_and.union(posts_body_and, posts_title_or, posts_body_or).order_by("order")[:21]
         count = posts.count()
         return render(request, 'blog/search.html', {'query': query, 'count': count, 'posts': posts})
     else:
