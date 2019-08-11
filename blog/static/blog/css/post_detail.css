@@ -1,181 +1,220 @@
 .main-block {
-	padding-top:0.5rem;
-	background-color: #1BE300;
-	width: 100%;
+     padding-top:0.5rem;
+     background-color: #1BE300;
+     width: 100%;
 }
-
-.main-block-text {
-	text-align: center;
+ .main-block-text {
+     text-align: center;
 }
-.main-block-text h1 {
-	font-size: 3em;
-	color: #2E2E2E;
-	font-family: 'Merriweather Sans', sans-serif;
+ .main-block-text h1 {
+     font-size: 3em;
+     color: #2E2E2E;
+     font-family: 'Merriweather Sans', sans-serif;
 }
-.main-block-text p {
-	text-transform: uppercase;
-	font-size: 1.2em;
-	color: #000000;
-	font-family: 'Raleway', sans-serif;
+ .main-block-text p {
+     text-transform: uppercase;
+     font-size: 1.2em;
+     color: #000000;
+     font-family: 'Raleway', sans-serif;
 }
-.main-block-text h5 {
-	font-size: 1.2em;
-	color: #000000;
-	font-family: 'Raleway', sans-serif;
-
+ .main-block-text h5 {
+     font-size: 1.2em;
+     color: #000000;
+     font-family: 'Raleway', sans-serif;
 }
-#main-block-image {
-	width: 100%;
-	height: auto;
-	border: 0px solid #1BE300;
-	border-radius: 10px;
+ #main-block-image {
+     width: 100%;
+     height: auto;
+     border: 0px solid #1BE300;
+     border-radius: 10px;
 }
-
-.post-block {
-	background-color: #FFF;
-	border-top: 3px solid #1BE300;
-	color: #000;
-	padding-bottom: 10rem;
+ .post-block {
+     background-color: #FFF;
+     border-top: 3px solid #1BE300;
+     color: #000;
+     padding-bottom: 10rem;
 }
-.post-block-text {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	padding-top: 3rem;
+ .post-block-text {
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 300;
+     padding-top: 3rem;
 }
-.post-block img {
-	width: 80%;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+ .post-block img {
+     width: 80%;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
 }
-.post-block .container-fluid {
-	padding-left: 1rem;
-	padding-right: 1rem;
+ .post-block .container-fluid {
+     padding-left: 1rem;
+     padding-right: 1rem;
 }
-
-.post-block-text a {
-	color: #000;
-	text-decoration: underline;
+ .post-block-text a {
+     color: #000;
+     text-decoration: underline;
 }
-.post-block-text a:hover {
-	color: #5FCA10;
+ .post-block-text a:hover {
+     color: #5FCA10;
 }
-
-.post-block-text p {
-	font-size: 2em;
+ .post-block-text p {
+     font-size: 2em;
 }
-.post-block-text h1 {
-	font-family: 'Hind', sans-serif;
-	font-size: 3em;
-	padding-top: 3rem;
+ .post-block-text h1 {
+     font-family: 'Hind', sans-serif;
+     font-size: 3em;
+     padding-top: 3rem;
 }
-.post-block-text h2 {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 600;
-	font-size: 4em;
-	color: #000;
-	background-color: #1BE300;
-	font-style: italic;
-	text-align: center;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	margin-top:2rem;
-	margin-bottom:2rem;
-	margin-left:1rem;
-	margin-right:1rem;
+ .post-block-text h2 {
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight: 600;
+     font-size: 4em;
+     color: #000;
+     background-color: #1BE300;
+     font-style: italic;
+     text-align: center;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     margin-top:2rem;
+     margin-bottom:2rem;
+     margin-left:1rem;
+     margin-right:1rem;
 }
-.post-block-text ul {
-	font-size: 2em;
+ .post-block-text ul {
+     font-size: 2em;
 }
-.post-block-text li {
-	padding-bottom: 1.25rem;
+ .post-block-text li {
+     padding-bottom: 1.25rem;
 }
-.post-block-text strong {
-	font-weight: 600;
+ .post-block-text strong {
+     font-weight: 600;
 }
-.post-block-text button {
-	margin: auto;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	display: block;
-	font-size: 2em;
-	background-color: #1BE300;
-	border-radius: 15px;
-	padding: 0.2rem;
+ .post-block-text button {
+     margin: auto;
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+     display: block;
+     font-size: 2em;
+     background-color: #1BE300;
+     border-radius: 15px;
+     padding: 0.2rem;
 }
-.post-block-text button a {
-	text-decoration: none;
-	color: #000;
-	padding: 0.5rem;
+ .post-block-text button a {
+     text-decoration: none;
+     color: #000;
+     padding: 0.5rem;
 }
-.post-block-text button:hover {background-color: #1AD800;}
-
-.fb-share-buttons {
-	padding-bottom: 10rem;
+ .post-block-text button:hover {
+    background-color: #1AD800;
 }
-.fb-post-comment-header h1 {
-	font-size: 3em;
-	font-family: 'Hind', sans-serif;
+ .fb-share-buttons {
+     padding-bottom: 10rem;
 }
-
+ .fb-post-comment-header h1 {
+     font-size: 3em;
+     font-family: 'Hind', sans-serif;
+}
 /* To make facebook comment plugin more fluid. And fixes plugins loading invisible sometimes.*/
-.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
-    width: 100% !important;
+ .fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+     width: 100% !important;
 }
-.fb-share-buttons {
-	height: 100px;
+ .fb-share-buttons {
+     height: 100px;
 }
-
-@media screen and (min-width: 576px) {
-	.post-block .container-fluid {padding-left: 2rem; padding-right: 2rem;}
+ @media screen and (min-width: 576px) {
+     .post-block .container-fluid {
+        padding-left: 2rem;
+         padding-right: 2rem;
+    }
 }
-
-@media screen and (min-width: 768px) {
-	.post-block .container-fluid {padding-left: 4rem; padding-right: 4rem;}
-	.main-block-text h1 {font-size: 3.8em;}
-	.main-block-text p {font-size: 1.3em;}
-	.main-block-text h5 {font-size: 1.3em;}
-	.post-block img {width: 65%;}
-	.post-block-text h2 {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		padding-left: 3rem;
-		padding-right: 3rem;
-		margin-top:3rem;
-		margin-bottom:3rem;
-		margin-left:2rem;
-		margin-right:2rem;
-	}
+ @media screen and (min-width: 768px) {
+     .post-block .container-fluid {
+        padding-left: 4rem;
+         padding-right: 4rem;
+    }
+     .main-block-text h1 {
+        font-size: 3.8em;
+    }
+     .main-block-text p {
+        font-size: 1.3em;
+    }
+     .main-block-text h5 {
+        font-size: 1.3em;
+    }
+     .post-block img {
+        width: 65%;
+    }
+     .post-block-text h2 {
+         padding-top: 1rem;
+         padding-bottom: 1rem;
+         padding-left: 3rem;
+         padding-right: 3rem;
+         margin-top:3rem;
+         margin-bottom:3rem;
+         margin-left:2rem;
+         margin-right:2rem;
+    }
 }
-
-@media screen and (min-width: 992px) {
-	.post-block .container-fluid {padding-left: 10rem; padding-right: 10rem;}
-	.main-block {padding-top:3.5rem;}
-	.main-block-text {text-align: left;}
+ @media screen and (min-width: 992px) {
+     .post-block .container-fluid {
+        padding-left: 10rem;
+         padding-right: 10rem;
+    }
+     .main-block {
+        padding-top:3.5rem;
+    }
+     .main-block-text {
+        text-align: left;
+    }
 }
-
-@media screen and (min-width: 1200px) {
-	.post-block .container-fluid {padding-left: 16rem; padding-right: 16rem;}
+ @media screen and (min-width: 1200px) {
+     .post-block .container-fluid {
+        padding-left: 16rem;
+         padding-right: 16rem;
+    }
 }
-
-@media screen and (min-width: 1400px) {
-	.post-block .container-fluid {padding-left: 22rem; padding-right: 22rem;}
-	.main-block-text h1 {font-size: 4em;}
-	.main-block-text p {font-size: 1.4em;}
-	.main-block-text h5 {font-size: 1.4em;}
+ @media screen and (min-width: 1400px) {
+     .post-block .container-fluid {
+        padding-left: 22rem;
+         padding-right: 22rem;
+    }
+     .main-block-text h1 {
+        font-size: 4em;
+    }
+     .main-block-text p {
+        font-size: 1.4em;
+    }
+     .main-block-text h5 {
+        font-size: 1.4em;
+    }
 }
-
-@media screen and (min-width: 1600px) {
-	.post-block .container-fluid { padding-left: 28rem; padding-right: 28rem;}
-	.main-block-text h1 {font-size: 4.25em;}
-	.main-block-text p {font-size: 1.5em;}
-	.main-block-text h5 {font-size: 1.5em;}
-	.post-block-text p {font-size: 2.25em;}
-	.post-block-text button {font-size: 2.25em;}
-	.post-block-text h1 {font-size: 3.25em;}
-	.post-block-text h2 {font-size: 4.25em;}
+ @media screen and (min-width: 1600px) {
+     .post-block .container-fluid {
+         padding-left: 28rem;
+         padding-right: 28rem;
+    }
+     .main-block-text h1 {
+        font-size: 4.25em;
+    }
+     .main-block-text p {
+        font-size: 1.5em;
+    }
+     .main-block-text h5 {
+        font-size: 1.5em;
+    }
+     .post-block-text p {
+        font-size: 2.25em;
+    }
+     .post-block-text button {
+        font-size: 2.25em;
+    }
+     .post-block-text h1 {
+        font-size: 3.25em;
+    }
+     .post-block-text h2 {
+        font-size: 4.25em;
+    }
 }

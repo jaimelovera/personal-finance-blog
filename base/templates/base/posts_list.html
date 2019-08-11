@@ -1,18 +1,18 @@
 {% load static %}
 <div class="container pb-3">
-	<div class="row">
-		{% for post in posts %}
-		<div class="col col-6 col-md-4">
-			<a href="{% url 'post-detail' pk=post.pk slug=post.slug %}">
-				<div class="box zoom-105">
-					<img class="box-image" src="{{ post.main_image.url }}" alt="Image" style="width:100%">
-					<div class="box-content">
-						<h1>{{ post.get_category_display }}</h1>
-						<p><span>{{ post.title }}</span></p>
-					</div>
-				</div>
-			</a>
-		</div>
-		{% endfor %}
-	</div>
+  <div class="row">
+    {% for post in posts %}
+    <div class="col col-6 col-md-4">
+      <a href="{% url 'post-detail' pk=post.pk slug=post.slug %}">
+        <div class="box zoom-105">
+          <img class="box-image" src="{{ post.main_image.url }}" alt="Image" style="width:100%">
+          <div class="box-content">
+            <h1>{{ post.get_category_display }}</h1>
+            <p><span>{{ post.title }}</span></p>
+          </div>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
 </div>

@@ -2,32 +2,27 @@
 {% load static %}
 {% block title %}Credit Cards | GetMoneyStayBummy{% endblock %}
 {% block extra_head %}
-	<style>.creditcards-active {border-bottom: 1px solid #47A600;}</style>
-	<link rel="stylesheet" href="{% static 'blog/css/category_page.css' %}">
-	<link rel="stylesheet" href="{% static 'base/css/posts_list.css' %}">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+<style>.creditcards-active {border-bottom: 1px solid #47A600;}</style>
+<link rel="stylesheet" href="{% static 'blog/css/category_page.css' %}">
+<link rel="stylesheet" href="{% static 'base/css/posts_list.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 {% endblock %}
-
 {% block content %}
-
 <div class= "main-block">
-	<div class="container">
-			<div class="row no-gutters px-5">
-				<div class="col-lg-6 d-flex align-items-center justify-content-center pt-5 pb-3 main-block-text">
-					<h1>Credit Cards</h1>
-				</div>
-				<div class="col-lg-6 d-flex justify-content-center">
-					<img src="{% static 'blog/img/main/creditcards.png' %}" alt="Image" id="main-block-image">
-				</div>
-			</div>
-	</div>
+  <div class="container">
+    <div class="row no-gutters px-5">
+      <div class="col-lg-6 d-flex align-items-center justify-content-center pt-5 pb-3 main-block-text">
+        <h1>Credit Cards</h1>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center">
+        <img src="{% static 'blog/img/main/creditcards.png' %}" alt="Image" id="main-block-image">
+      </div>
+    </div>
+  </div>
 </div>
-
 <div class="posts-block">
-	{% include 'base/posts_list.html' %}
+  {% include 'base/posts_list.html' %}
 </div>
-
 {% endblock %}
-
 {% block javascript %}
 {% endblock %}

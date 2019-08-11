@@ -1,22 +1,27 @@
 .main-block h1 {
-	font-size: 2.6em;
-	font-family: 'Quicksand', sans-serif;
-	color: #2E2E2E;
-	text-align: center;
+     font-size: 2.6em;
+     font-family: 'Quicksand', sans-serif;
+     color: #2E2E2E;
+     text-align: center;
 }
-.posts-block {
-	padding-bottom: 4rem;
+ .posts-block {
+     padding-bottom: 4rem;
 }
-
-
-
-@media screen and (min-width: 576px) {    }
-@media screen and (min-width: 768px) {
-	.main-block h1 {font-size: 3.4em;}
-} 
-@media screen and (min-width: 992px) {    } 
-@media screen and (min-width: 1200px) {
-	.main-block h1 {font-size: 3.8em;}
-} 
-@media screen and (min-width: 1400px) {    } 
-@media screen and (min-width: 1600px) {    } 
+ @media screen and (min-width: 576px) {
+}
+ @media screen and (min-width: 768px) {
+     .main-block h1 {
+        font-size: 3.4em;
+    }
+}
+ @media screen and (min-width: 992px) {
+}
+ @media screen and (min-width: 1200px) {
+     .main-block h1 {
+        font-size: 3.8em;
+    }
+}
+ @media screen and (min-width: 1400px) {
+}
+ @media screen and (min-width: 1600px) {
+}
