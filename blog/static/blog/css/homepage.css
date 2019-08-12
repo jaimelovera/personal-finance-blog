@@ -1,145 +1,180 @@
 .main-block {
-     background-color: #1BE300;
+  background-color: #1BE300;
 }
- .main-block a:hover h1 span{
-     text-decoration: none;
-     color: inherit;
-     border-bottom: 1px solid #2E2E2E;
+
+.main-block a:hover h1 span {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid #2E2E2E;
 }
- .main-block a:hover #title-tiny-text{
-     border-bottom: 0px;
+
+.main-block a:hover #title-tiny-text {
+  border-bottom: 0px;
 }
- .main-block-text {
-     color: #2E2E2E;
-     font-family: 'Merriweather Sans', sans-serif;
-     flex-direction: column;
-     text-align: center;
+
+.main-block-text {
+  color: #2E2E2E;
+  font-family: 'Merriweather Sans', sans-serif;
+  flex-direction: column;
+  text-align: center;
 }
- .main-block-text h1 {
-     font-size: 2.3em;
+
+.main-block-text h1 {
+  font-size: 2.3em;
 }
- .main-block-text #title-tiny-text {
-     font-size: 0.4em;
+
+.main-block-text #title-tiny-text {
+  font-size: 0.4em;
 }
- #main-block-image {
-     width: 100%;
-     height: 100%;
-     padding-bottom: 0.75rem;
+
+#main-block-image {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0.75rem;
 }
- .emaillist {
-     background-color: #E5E5E5;
-     text-align: center;
-     padding-top: 4rem;
-     padding-bottom: 4rem;
-     padding-left: 2rem;
-     padding-right: 2rem;
+
+.emaillist {
+  background-color: #E5E5E5;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
- #mc_embed_signup {
-     background-color: #E5E5E5;
-     clear: left;
-     width:100%;
+
+#mc_embed_signup {
+  background-color: #E5E5E5;
+  clear: left;
+  width: 100%;
 }
- #mc_embed_signup_scroll label {
-     font-size: 1.75em !important;
-     font-weight: 400 !important;
-     font-family: 'Quicksand', sans-serif;
+
+#mc_embed_signup_scroll label {
+  font-size: 1.75em !important;
+  font-weight: 400 !important;
+  font-family: 'Quicksand', sans-serif;
 }
- #mc_embed_signup .button {
-     color: #2E2E2E !important;
-     background-color: #1BE300 !important;
+
+#mc_embed_signup .button {
+  color: #2E2E2E !important;
+  background-color: #1BE300 !important;
 }
- #mc_embed_signup .button:hover{
-     color: black !important;
-     background-color: #5FCA10 !important;
+
+#mc_embed_signup .button:hover {
+  color: black !important;
+  background-color: #5FCA10 !important;
 }
- .featured-title h1{
-     text-align: center;
-     font-size: 1.75em;
-     font-family: 'Quicksand', sans-serif;
+
+.featured-title h1 {
+  text-align: center;
+  font-size: 1.75em;
+  font-family: 'Quicksand', sans-serif;
 }
- .view-all-posts-link h1 {
-     text-align: center;
-     font-size: 1.25em;
-     color: #B2B2B2;
-     font-family: 'Quicksand', sans-serif;
-     padding-bottom: 4rem;
+
+.view-all-posts-link h1 {
+  text-align: center;
+  font-size: 1.25em;
+  color: #B2B2B2;
+  font-family: 'Quicksand', sans-serif;
+  padding-bottom: 4rem;
 }
- .view-all-posts-link a:hover{
-     color: #2A2A2A;
+
+.view-all-posts-link a:hover {
+  color: #2A2A2A;
 }
- @media screen and (min-width: 576px) {
-     .main-block-text h1 {
-        font-size: 2.5em;
-    }
-     .featured-title h1{
-        font-size: 1.8em;
-    }
-     .view-all-posts-link h1 {
-        font-size: 1.3em;
-    }
+
+@media screen and (min-width: 576px) {
+  .main-block-text h1 {
+    font-size: 2.5em;
+  }
+
+  .featured-title h1 {
+    font-size: 1.8em;
+  }
+
+  .view-all-posts-link h1 {
+    font-size: 1.3em;
+  }
 }
- @media screen and (min-width: 768px) {
-     .main-block-text h1 {
-        font-size: 3em;
-    }
-     .featured-title h1{
-        font-size: 1.85em;
-    }
-     .view-all-posts-link h1 {
-        font-size: 1.35em;
-    }
+
+@media screen and (min-width: 768px) {
+  .main-block-text h1 {
+    font-size: 3em;
+  }
+
+  .featured-title h1 {
+    font-size: 1.85em;
+  }
+
+  .view-all-posts-link h1 {
+    font-size: 1.35em;
+  }
 }
- @media screen and (min-width: 992px) {
-     .main-block {
-        padding-top:3.5rem;
-    }
-     .main-block-text {
-        text-align: left;
-    }
-     #main-block-image {
-        padding-top: 5rem;
-    }
-     .main-block-text h1 {
-        font-size: 2.55em;
-         padding-bottom: 2rem;
-    }
-     .featured-title h1{
-        font-size: 1.9em;
-    }
-     .view-all-posts-link h1 {
-        font-size: 1.4em;
-    }
+
+@media screen and (min-width: 992px) {
+  .main-block {
+    padding-top: 3.5rem;
+  }
+
+  .main-block-text {
+    text-align: left;
+  }
+
+  #main-block-image {
+    padding-top: 5rem;
+  }
+
+  .main-block-text h1 {
+    font-size: 2.55em;
+    padding-bottom: 2rem;
+  }
+
+  .featured-title h1 {
+    font-size: 1.9em;
+  }
+
+  .view-all-posts-link h1 {
+    font-size: 1.4em;
+  }
 }
- @media screen and (min-width: 1200px) {
-     .main-block-text h1 {
-        font-size: 3em;
-    }
-     .featured-title h1{
-        font-size: 1.95em;
-    }
-     .view-all-posts-link h1 {
-        font-size: 1.45em;
-    }
-     #mc_embed_signup_scroll label {
-        font-size: 2em !important;
-    }
+
+@media screen and (min-width: 1200px) {
+  .main-block-text h1 {
+    font-size: 3em;
+  }
+
+  .featured-title h1 {
+    font-size: 1.95em;
+  }
+
+  .view-all-posts-link h1 {
+    font-size: 1.45em;
+  }
+
+  #mc_embed_signup_scroll label {
+    font-size: 2em !important;
+  }
 }
- @media screen and (min-width: 1400px) {
-     .main-block-text h1 {
-        font-size: 3.1em;
-    }
-     .featured-title h1{
-        font-size: 2em;
-    }
-     .view-all-posts-link h1 {
-        font-size: 1.5em;
-    }
+
+@media screen and (min-width: 1400px) {
+  .main-block-text h1 {
+    font-size: 3.1em;
+  }
+
+  .featured-title h1 {
+    font-size: 2em;
+  }
+
+  .view-all-posts-link h1 {
+    font-size: 1.5em;
+  }
 }
- @media screen and (min-width: 1600px) {
-     .featured-title h1{
-        font-size: 2.05em;
-    }
-     .view-all-posts-link h1 {
-        font-size: 1.55em;
-    }
+
+@media screen and (min-width: 1600px) {
+  .featured-title h1 {
+    font-size: 2.05em;
+  }
+
+  .view-all-posts-link h1 {
+    font-size: 1.55em;
+  }
 }

@@ -1,55 +1,64 @@
 .main-block {
-     padding-top: 1rem;
-     padding-bottom: 5rem;
-     padding-left: 1rem;
-     padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
- .main-block h1 {
-     padding-top: 4rem;
-     font-size: 3.5em;
-     color: #2E2E2E;
-     font-family: 'Merriweather Sans', sans-serif;
+
+.main-block h1 {
+  padding-top: 4rem;
+  font-size: 3.5em;
+  color: #2E2E2E;
+  font-family: 'Merriweather Sans', sans-serif;
 }
- .main-block h2 {
-     font-size: 1.5em;
-     color: #2E2E2E;
-     text-transform: uppercase;
-     font-family: 'Merriweather Sans', sans-serif;
+
+.main-block h2 {
+  font-size: 1.5em;
+  color: #2E2E2E;
+  text-transform: uppercase;
+  font-family: 'Merriweather Sans', sans-serif;
 }
- .main-block p {
-     font-size: 1.3em;
-     color: #000000;
-     font-family: 'Raleway', sans-serif;
+
+.main-block p {
+  font-size: 1.3em;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
 }
- @media screen and (min-width: 576px) {
+
+@media screen and (min-width: 576px) {
 }
- @media screen and (min-width: 768px) {
-     .main-block {
-         padding-left: 4rem;
-         padding-right: 4rem;
-    }
+
+@media screen and (min-width: 768px) {
+  .main-block {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
- @media screen and (min-width: 992px) {
-     .main-block {
-         padding-left: 8rem;
-         padding-right: 8rem;
-    }
+
+@media screen and (min-width: 992px) {
+  .main-block {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
 }
- @media screen and (min-width: 1200px) {
-     .main-block {
-         padding-left: 12rem;
-         padding-right: 12rem;
-    }
+
+@media screen and (min-width: 1200px) {
+  .main-block {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
 }
- @media screen and (min-width: 1400px) {
-     .main-block {
-         padding-left: 14rem;
-         padding-right: 14rem;
-    }
+
+@media screen and (min-width: 1400px) {
+  .main-block {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
 }
- @media screen and (min-width: 1600px) {
-     .main-block {
-         padding-left: 18rem;
-         padding-right: 18rem;
-    }
+
+@media screen and (min-width: 1600px) {
+  .main-block {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
 }
