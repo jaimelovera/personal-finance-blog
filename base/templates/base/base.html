@@ -25,6 +25,8 @@
     {% block extra_head %}{% endblock %}
   </head>
   <body>
+
+  	<div class="loader"></div>
     <div id="page-container">
 
       <div id="content-wrap">
@@ -121,6 +123,14 @@
     <!-- Bootstrap core JavaScript -->
     <script src="{% static 'base/vendor/jquery-3.4.1/js/jquery.min.js' %}"></script>
     <script src="{% static 'base/vendor/bootstrap-4.3.1/js/bootstrap.bundle.min.js' %}"></script>
+    
+    <!-- Loader -->
+    <script>
+      $(document).ready(function(){
+        $('.loader').css('visibility', 'hidden');
+      });
+    </script>
+
     {% block javascript %}{% endblock %}
   </body>
 </html>
