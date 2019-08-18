@@ -2,6 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- Image Loader GIF + Fade In Once Loaded (NOTE:image must start with opacity 0) -->
+    <script> 
+    function fadeImageIn(obj) {
+        obj.style.opacity = '1';
+    }
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144341523-1"></script>
     <script>
@@ -124,7 +132,7 @@
     <script src="{% static 'base/vendor/jquery-3.4.1/js/jquery.min.js' %}"></script>
     <script src="{% static 'base/vendor/bootstrap-4.3.1/js/bootstrap.bundle.min.js' %}"></script>
     
-    <!-- Loader -->
+    <!-- Main Page Loader -->
     <script>
       $(document).ready(function(){
         $('.loader').css('visibility', 'hidden');

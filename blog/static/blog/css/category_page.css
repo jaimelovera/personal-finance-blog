@@ -24,6 +24,11 @@
   height: 100%;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
+  opacity:0;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
 }
 
 @media screen and (min-width: 576px) {

@@ -18,8 +18,21 @@
   margin-right: 0;
 }
 
+.box-image-container {
+  width:100%;
+  min-height: 75px;
+  background: #FFF url("../img/loading.gif") no-repeat center;
+}
+
 .box-image {
+  width:100%;
+  height: auto;
+  opacity:0;
   border-radius: 5px 5px 0 0;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
 }
 
 .box-content {
