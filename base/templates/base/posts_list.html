@@ -6,7 +6,7 @@
       <a href="{% url 'post-detail' pk=post.pk slug=post.slug %}">
         <div class="box zoom-105">
           <div class="box-image-container">
-            <img class="box-image" onload="fadeImageIn(this);" src="{{ post.main_image.url }}" alt="Image">
+            <img class="box-image" onload="fadeImageIn(this);" src="{{ post.main_image.url }}" alt="Posts Image">
           </div>
           <div class="box-content">
             <h1>{{ post.get_category_display }}</h1>

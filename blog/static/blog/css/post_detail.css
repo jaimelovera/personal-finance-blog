@@ -47,6 +47,21 @@
   padding-top: 3rem;
 }
 
+.box-image-container {
+  width:100%;
+  min-height: 75px;
+  background: #FFF url("../img/main/loading.gif") no-repeat center;
+}
+.box-image {
+  opacity:0;
+  width:100%;
+  height: auto;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition:    opacity 0.5s ease-out;
+  -o-transition:      opacity 0.5s ease-out;
+  transition:         opacity 0.5s ease-out;
+}
+
 .post-block img {
   width: 80%;
   padding-top: 2rem;
