@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Tools | GetMoneyStayBummy{% endblock %}
+{% block extra_head %}
+<style>.tools-active {border-bottom: 1px solid #47A600;}</style>
+<link rel="stylesheet" href="{% static 'blog/css/tools.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class= "main-block">
+  <a href="{% url 'money-visualizer' %}">Money Visualizer<a>
+</div>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
