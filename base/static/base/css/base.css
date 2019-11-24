@@ -92,6 +92,32 @@ a:hover {
   padding-right: 0.25rem;
 }
 
+.dropdown-menu{
+  background-color: transparent;
+  border: 0;
+  margin-top: 0;
+  padding: 4px;
+}
+
+.dropdown-menu-wrapper{
+  background-color: #FFF;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:hover {
+  border-radius: 4px;
+}
+
+.dropdown-item:active {
+  background-color: #D5D5D5;
+  color: #000;
+}
+
 .logo-nav {
   height: 2rem;
 }

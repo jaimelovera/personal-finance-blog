@@ -78,9 +78,6 @@ def creditcards(request):
     posts = Post.objects.filter(category='CREDIT_CARDS').exclude(published_date=None).order_by('-published_date')
     return render(request, 'blog/creditcards.html', {'posts': posts})
 
-def tools(request):
-    return render(request, 'blog/tools.html')
-
 def post_detail(request, pk, slug):
     #Checks for superuser authentication first. To preview unpublished posts using 'View on site' admin model link.
     if request.user.is_superuser:

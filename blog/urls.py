@@ -8,7 +8,6 @@ urlpatterns = [
 	path('investing', views.investing, name='investing'),
 	path('saving', views.saving, name='saving'),
 	path('creditcards', views.creditcards, name='creditcards'),
-	path('tools', views.tools, name='tools'),
 	path('money-visualizer', TemplateView.as_view(template_name='blog/money_visualizer.html'), name='money-visualizer'),
 	path('post/<int:pk>/<slug:slug>', views.post_detail, name='post-detail'),
 	path('subscribe-thank-you', views.subscribe_thank_you, name='subscribe-thank-you'),
