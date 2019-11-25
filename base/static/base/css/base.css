@@ -111,6 +111,7 @@ a:hover {
 
 .dropdown-item:hover {
   border-radius: 4px;
+  color: #47A600;
 }
 
 .dropdown-item:active {
