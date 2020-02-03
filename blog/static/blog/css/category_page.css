@@ -40,6 +40,15 @@
   transition:         opacity 0.1s ease-out;
 }
 
+.page-path-links {
+  display: flex ;
+  font-size: 1.5em;
+}
+
+.page-path-links-arrow {
+  padding: 0 0.25rem 0;
+}
+
 @media screen and (min-width: 576px) {
 }
 

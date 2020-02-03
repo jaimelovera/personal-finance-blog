@@ -5,6 +5,7 @@
 <style>.saving-active {border-bottom: 1px solid #47A600;}</style>
 <link rel="stylesheet" href="{% static 'blog/css/category_page.css' %}">
 <link rel="stylesheet" href="{% static 'base/css/posts_list.css' %}">
+<link rel="stylesheet" href="{% static 'base/css/list_pagination.css' %}">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 {% endblock %}
 {% block content %}
@@ -22,7 +23,15 @@
   </div>
 </div>
 <div class="posts-block">
+  <div class="container pb-3">
+    <div class="row page-path-links">
+      <a href="{% url 'homepage' %}">Home</a>
+      <div class="page-path-links-arrow">></div>
+      <div>Saving</div>
+    </div>
+  </div>
   {% include 'base/posts_list.html' %}
+  {% include 'base/list_pagination.html' %}
 </div>
 {% endblock %}
 {% block javascript %}

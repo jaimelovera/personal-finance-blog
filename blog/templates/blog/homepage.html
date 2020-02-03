@@ -27,8 +27,13 @@
 <div class="pt-4 pb-2 featured-title">
   <h1>Featured Posts</h1>
 </div>
+{% include 'base/posts_list.html' with posts=posts %}
 
-{% include 'base/posts_list.html' %}
+<div class="pt-4 pb-2 featured-title">
+  <h1>Latest Posts</h1>
+</div>
+{% include 'base/posts_list.html' with posts=posts2 %}
+
 
 <div class="view-all-posts-link">
   <h1><a href="{% url 'all-posts' %}">View All Posts</a></h1>

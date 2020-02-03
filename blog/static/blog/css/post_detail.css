@@ -34,6 +34,24 @@
   border-radius: 10px;
 }
 
+.by-author a:hover{
+  color: black;
+  font-weight: bold;
+}
+
+.post-block .page-path-links {
+  display: flex ;
+  font-size: 1.5em;
+}
+
+.post-block .page-path-links a{
+  text-decoration: none;
+}
+
+.post-block .page-path-links-arrow {
+  padding: 0 0.25rem 0;
+}
+
 .post-block {
   background-color: #FFF;
   border-top: 3px solid #1BE300;

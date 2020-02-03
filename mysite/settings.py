@@ -140,7 +140,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'investment-debt-calculator', 'build', 'static'),
+    os.path.join(BASE_DIR, 'investment-loan-calculators', 'build', 'static'),
 ]
 
 MEDIA_URL = '/media/'

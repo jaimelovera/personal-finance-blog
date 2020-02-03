@@ -1,8 +1,8 @@
 {% extends 'base/base.html' %}
 {% load static %}
-{% block title %}Investing | GetMoneyStayBummy{% endblock %}
+{% block title %}Mentality | GetMoneyStayBummy{% endblock %}
 {% block extra_head %}
-<style>.investing-active {border-bottom: 1px solid #47A600;}</style>
+<style>.mentality-active, .more-active {border-bottom: 1px solid #47A600;}</style>
 <link rel="stylesheet" href="{% static 'blog/css/category_page.css' %}">
 <link rel="stylesheet" href="{% static 'base/css/posts_list.css' %}">
 <link rel="stylesheet" href="{% static 'base/css/list_pagination.css' %}">
@@ -13,11 +13,11 @@
   <div class="container">
     <div class="row no-gutters px-5">
       <div class="col-lg-6 d-flex align-items-center justify-content-center pt-5 pb-3 main-block-text">
-        <h1>Investing</h1>
+        <h1>Mentality</h1>
       </div>
       <div class="col-lg-6 d-flex justify-content-center">
         <div id="main-block-image-temp"></div>
-        <img id="main-block-image" onload="fadeImageIn(this);" src="{% static 'blog/img/main/investing.png' %}" alt="Image">
+        <img id="main-block-image" onload="fadeImageIn(this);" src="{% static 'blog/img/main/mentality.png' %}" alt="Image">
       </div>
     </div>
   </div>
@@ -27,7 +27,7 @@
     <div class="row page-path-links">
       <a href="{% url 'homepage' %}">Home</a>
       <div class="page-path-links-arrow">></div>
-      <div>Investing</div>
+      <div>Mentality</div>
     </div>
   </div>
   {% include 'base/posts_list.html' %}
