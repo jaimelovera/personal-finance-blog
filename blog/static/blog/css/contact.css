@@ -1,25 +1,28 @@
 .main-block {
-  font-family: 'Quicksand', sans-serif;
-  color: #2E2E2E;
-  padding-top: 6rem;
-  padding-bottom: 8rem;
+	font-family: 'Quicksand', sans-serif;
+	background-image: linear-gradient(#EEEEEE, #FFF, #EEEEEE);
+}
+
+.main-block .container{
+	padding: 6rem;
+	background-image: linear-gradient(#E1E1E1, #FFF, #E1E1E1);
 }
 
 .main-block a {
-  font-size: 2em;
+	font-size: 2em;
 }
 
 .main-block a:hover {
-  color: #2E2E2E;
-  text-decoration: underline;
+	color: #2E2E2E;
+	text-decoration: underline;
 }
 
 .main-block h2 {
-  font-size: 4.2em;
+	font-size: 4.2em;
 }
 
 .main-block p {
-  font-size: 2.2em;
+	font-size: 2.2em;
 }
 
 @media screen and (min-width: 576px) {

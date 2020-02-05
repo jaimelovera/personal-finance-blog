@@ -1,5 +1,5 @@
 .main-block {
-  background-color: #1BE300;
+  background-image: linear-gradient(#19D600, #1BE300, #19D600);
   min-height: 100%;
   padding-top: 0.5rem;
 }
