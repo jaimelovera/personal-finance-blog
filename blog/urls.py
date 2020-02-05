@@ -14,7 +14,7 @@ urlpatterns = [
 	path('credit-score', views.credit_score, name='credit-score'),
 	path('debt', views.debt, name='debt'),
 	path('mentality', views.mentality, name='mentality'),
-	path('interviews', views.interviews, name='interviews'),
+	path('personal-finance', views.personal_finance, name='personal-finance'),
 	path('investment-loan-calculators', TemplateView.as_view(template_name='blog/investment_loan_calculators.html'), name='investment-loan-calculators'),
 	path('post/<int:pk>/<slug:slug>', views.post_detail, name='post-detail'),
 	path('subscribe-thank-you', views.subscribe_thank_you, name='subscribe-thank-you'),

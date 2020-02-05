@@ -63,30 +63,26 @@
                   <a class="nav-link py-0" href="{% url 'investing' %}"><span class="investing-active">Investing</span></a>
                 </li>
                 <li class="nav-item">
-                <li class="nav-item">
                   <div class="dropdown">
                     <a class="nav-link py-0 dropdown-toggle"
-                       href="#" 
+                       href="{% url 'personal-finance' %}"
                        role="button" 
                        id="dropdownMenuLink" 
                        aria-haspopup="true" 
                        aria-expanded="false">
-                       <span class="more-active">More</span>
+                       <span class="more-active">Personal Finance</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                       <div class="dropdown-menu-wrapper">
-                        <a class="dropdown-item" href="{% url 'credit-cards' %}"><span class="credit-cards-active">Credit Cards</span></a>
+                        <a class="dropdown-item" href="{% url 'credit-cards' %}"><span class="credit-cards-active">Credit Cards</a>
                         <a class="dropdown-item" href="{% url 'credit-score' %}"><span class="credit-score-active">Credit Score</a>
                         <a class="dropdown-item" href="{% url 'debt' %}"><span class="debt-active">Debt</a>
                         <a class="dropdown-item" href="{% url 'mentality' %}"><span class="mentality-active">Mentality</a>
-                        <a class="dropdown-item" href="{% url 'interviews' %}"><span class="interviews-active">Interviews</a>
                       </div>
                     </div>
                   </div>
                 </li>
-                </li>
                 <li class="nav-item-divider"></li>
-                <li class="nav-item">
                 <li class="nav-item">
                   <div class="dropdown">
                     <a class="nav-link py-0 dropdown-toggle"
@@ -103,7 +99,6 @@
                       </div>
                     </div>
                   </div>
-                </li>
                 </li>
                 <li class="nav-item mx-auto mx-md-0 ml-md-auto pb-0 d-none d-md-block search-bar">
                   <form action="{% url 'search' %}" method="get">

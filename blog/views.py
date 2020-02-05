@@ -109,6 +109,13 @@ def investing(request):
     posts = paginator.get_page(page_number)
     return render(request, 'blog/investing.html', {'posts': posts})
 
+def personal_finance(request):
+    objects = Post.objects.filter(Q(category='debt') | Q(category='credit-score') | Q(category='credit-cards') | Q(category='mentality')).exclude(published_date=None).order_by('-published_date')
+    paginator = Paginator(objects, 30)
+    page_number = request.GET.get('page')
+    posts = paginator.get_page(page_number)
+    return render(request, 'blog/personal_finance.html', {'posts': posts})
+
 def credit_cards(request):
     objects = Post.objects.filter(category='credit-cards').exclude(published_date=None).order_by('-published_date')
     paginator = Paginator(objects, 30)
@@ -136,10 +143,3 @@ def mentality(request):
     page_number = request.GET.get('page')
     posts = paginator.get_page(page_number)
     return render(request, 'blog/mentality.html', {'posts': posts})
-
-def interviews(request):
-    objects = Post.objects.filter(category='interviews').exclude(published_date=None).order_by('-published_date')
-    paginator = Paginator(objects, 30)
-    page_number = request.GET.get('page')
-    posts = paginator.get_page(page_number)
-    return render(request, 'blog/interviews.html', {'posts': posts})
