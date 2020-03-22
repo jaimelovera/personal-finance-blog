@@ -1,6 +1,6 @@
 {% extends 'base/base.html' %}
 {% load static %}
-{% block title %}About | GetMoneyStayBummy{% endblock %}
+{% block title %}About | Personal Finance Blog{% endblock %}
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'blog/css/post_detail.css' %}"> <!--Uses same CSS for the post-block as post detail page.-->
 <link rel="stylesheet" href="{% static 'blog/css/about.css' %}">
@@ -23,10 +23,10 @@
       <div class="col-12 post-block-text">
         <!--About Page Content Start. Use <p> <h1> <h2> and <img>'s and links -->
         <h1>About</h1>
-        <p>Hi, I am Jaime Lovera, the creator of <i>GetMoneyStayBummy</i>, a digital publication platform on a mission to educate the world about personal finance.</p>
+        <p>Hi, this website is a digital publication platform on a mission to educate the world about personal finance.</p>
         <p>In todays society, many people grow up with very little (if any) guidance on how to manage money. Too many people spend their life's working for a living, buying a bunch of stuff, and never getting closer to financial freedom.</p>
-        <p>This platform is here to help people avoid this cycle by adapting the <i>GetMoneyStayBummy</i> mentality.</p>
-        <p>If you have any questions, feedback, or would like to see more content on any specific topic, please <a href="{% url 'contact' %}">contact me</a> and I will respond as quickly as possible. I look forward to this journey with everyone!</p>
+        <p>This platform is here to help people avoid this cycle by adapting simple money management philosophies.</p>
+        <p>If you have any questions, feedback, or would like to see more content on any specific topic, please <a href="{% url 'contact' %}">contact us</a> and I will respond as quickly as possible. I look forward to this journey with everyone!</p>
         <!--About Page Content End-->
       </div>
     </div>
