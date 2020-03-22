@@ -1,4 +1,4 @@
-# www.getmoneystaybummy.com
+# Peronal Finance Blog
 A finance blog web application I developed using Django framework. It is designed for the administrator to easily add new blog posts through the admin interface. The admin will use html and custom tags I designed, which are documented in the post creation page.
 
 ### To Prepare:
