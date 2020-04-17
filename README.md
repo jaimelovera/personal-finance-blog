@@ -29,13 +29,13 @@ Although Django templates were reusable and great to work with, in the future I 
 ## Screenshots
 
 #### Homepage
-![HomePage](./personal-finance-blog/readme_screenshots/index.png?raw=true "HomePage")
+![HomePage](/readme_screenshots/index.png?raw=true "HomePage")
 
 #### Manage content through the Admin interface!
-![Admin Posts](/personal-finance-blog/readme_screenshots/admin.png?raw=true "Add/Delete/View posts in database")
+![Admin Posts](/readme_screenshots/admin.png?raw=true "Add/Delete/View posts in database")
 
 #### Add/Edit/Delete post content easily!
-![Admin Post](/personal-finance-blog/readme_screenshots/admin-post.png?raw=true "Edit post content.")
+![Admin Post](/readme_screenshots/admin-post.png?raw=true "Edit post content.")
 
 
 ## App Info
