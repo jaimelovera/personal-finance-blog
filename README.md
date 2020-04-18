@@ -1,11 +1,11 @@
-# Peronal Finance Blog
+# Personal Finance Blog
 > A finance blog I developed using the Django framework. It has a content management system I implemented leveraging Django Admin for easy content management.
 
 ## Visit My Hosted Demo
 https://jaimelv6.pythonanywhere.com/
 
 ### To Prepare:
-- I recomend setting up a [virtual environment](https://docs.python.org/3/library/venv.html) for this project.
+- I recommend setting up a [virtual environment](https://docs.python.org/3/library/venv.html) for this project.
 - Install the latest version of pip, which you will use to install Django.
   - ``` python -m pip install --upgrade pip ```
 - I included a requirements.txt file that has the Django version I am using. 
