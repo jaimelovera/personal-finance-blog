@@ -1,5 +1,5 @@
-# Peronal Finance Blog Django Web App
-> A finance blog web application I developed using Django framework. It has a content management system I implemented leveraging Django Admin.
+# Peronal Finance Blog
+> A finance blog I developed using the Django framework. It has a content management system I implemented leveraging Django Admin for easy content management.
 
 ## Visit My Hosted Demo
 https://jaimelv6.pythonanywhere.com/
@@ -20,11 +20,11 @@ https://jaimelv6.pythonanywhere.com/
 - Visit your local hosts url and append '/admin' to the url to visit the admin page. Use the superuser credentials you created earlier.
 
 ## Motivation
-I am passionate about personal finance. Due to this, I often get asked about basic personal finance. I love helping others and sharing my knowledge and opinions, so I decided to start a blog to be able to more easily share this information. A lot of personal finance is calculating risk and deciding how much risk you want to take. But there are some aspects about personal finance that are unarguably must-dos for financial success (think paying your credit cards on time, saving money, not overspending, etc.). The purpose of this website is to inform about those aspects of personal finance and try to spark interest in caring about these things. 
+I often get asked about basic personal finance. I love helping others and sharing my knowledge and opinions, so I decided to start a blog to be able to more easily share this information. A lot of personal finance is about calculating risk and deciding how much risk you want to take, which makes advice differ person to person. But there are some aspects about personal finance that are unarguably must-dos for financial success (paying your credit cards on time, saving money, not overspending, etc.). The purpose of this website is to inform about those aspects of personal finance and try to spark interest in caring about these things. 
 
 I wanted to build a website that would be easy to update and maintain content from within the browser without having to touch code every time. I had slight experience using Django at work, so I knew how versatile and feature rich it was. I really liked the out-of-the box features including admin, user authentication, and the ability to use templates. 
 
-Although Django templates were reusable and great to work with, in the future I plan to use Django only to serve as a backend RESTful API and developing my front-end with React.
+Although Django templates were reusable and great to work with, for future projects I plan to use Django only to serve as a backend RESTful API and developing my front-end with React.
 
 ## Screenshots
 
