@@ -2,10 +2,6 @@
 
 > A finance blog I developed using the Django framework. It has a content management system I implemented leveraging Django Admin for easy content management.
 
-## Visit My Live Demo
-
-https://jaimelv6.pythonanywhere.com/
-
 ### To Prepare:
 
 - I recommend setting up a [virtual environment](https://docs.python.org/3/library/venv.html) for this project.
@@ -46,6 +42,6 @@ Although Django templates were reusable and great to work with, for future proje
 
 ## App Info
 
-#### Author: [Jaime Lovera](https://www.jaimelovera.com/)
+#### Author: [Jaime Lovera](https://github.com/jaimelovera)
 
 ###### My first exposure with Django was through [this](https://tutorial.djangogirls.org/en/) tutorial. I highly recommend it to anyone that is wanting to build their first Django application!
