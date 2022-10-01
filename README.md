@@ -1,6 +1,6 @@
 # Personal Finance Blog - Django
 
-A finance blog I developed using the Django framework. It has a content management system I implemented leveraging Django Admin for easy content management.
+> A finance blog I developed using the Django framework. It has a content management system I implemented leveraging Django Admin for easy content management.
 
 ### To Prepare:
 
