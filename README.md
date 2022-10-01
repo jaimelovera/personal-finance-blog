@@ -1,5 +1,7 @@
 # Personal Finance Blog - Django
 
+###### Note: I no longer have the hosting services running for this website.
+
 > A finance blog I developed using the Django framework. It has a content management system I implemented leveraging Django Admin for easy content management.
 
 ### To Prepare:
